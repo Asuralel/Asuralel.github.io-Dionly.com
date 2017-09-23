@@ -40,4 +40,15 @@ require(['jquery','bootstrap'],function($,bt){
 	  interval: 4000
 	})
 
+	$('#cityareas #city_shenzhen').css({'color':'#8A0003','background':'url(../src/css/images/select.gif)'});
+	$('#cityareas .name').hover(function(){
+		$(this).css({'color':'#8A0003','background':'url(../src/css/images/select.gif)'});
+		$(this).siblings().css({'color':'#222','background':''});
+		$('#sitefoot_cityshopwrap .city .cityhide')[$(this).index()].style.display='block';
+		$($('#sitefoot_cityshopwrap .city .cityhide')[$(this).index()]).siblings().css({'display':'none'});
+		$('#cityshops').attr("src",'../src/images/city'+$(this).index()+'.jpg');
+	},function(){
+		$(this).css({'color':'#222','background':''});
+	})
+
 });
