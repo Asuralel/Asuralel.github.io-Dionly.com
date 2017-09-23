@@ -1,0 +1,32 @@
+/* 
+* @Author: Marte
+* @Date:   2017-07-26 19:09:03
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-09-23 12:20:19
+*/
+@charset "utf-8";
+/* CSS Document */
+/* reset 默认样式重置 */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, q, em, ul, li, ol, dl, dt, dd, form, article, aside, embed, table, td, th, input, button, legend, fieldset, blockquote, textarea, label, strong, img, cite { margin: 0; padding: 0; outline: none; }
+body {font-size: 12px; line-height: 1.5; font-family:'Microsoft Yahei','simsun','arial','tahoma';  color: #222; background: #fff; box-sizing: content-box;}
+header,footer,article,aside,section,nav,menu,hgroup,details,dialog,figure,figcaption{display:block;}
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 100%; }
+table { border-collapse:collapse; border-spacing:0; }
+button,input,select,textarea{font-size:100%;}
+ul,li,ol{ list-style: none; }
+fieldset,img{border:0;}
+em, cite, address,i { font-style: normal; font-weight: normal; }
+a { text-decoration: none; color: #222; background: none; }
+
+input { outline:none; border:none; }
+input::-ms-clear { display:none; }
+textarea { outline:none; resize:none; }
+
+/* 清浮动 */
+.clearfix:after,
+.clearfix:before{content: "";display: table;}
+.clearfix:after{clear: both;}
+.clearfix{*zoom:1;}
+
+.fl{float:left;}
+.fr{float:right;}

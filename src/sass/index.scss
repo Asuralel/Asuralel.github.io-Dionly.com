@@ -1,0 +1,462 @@
+$wrap_h:38px;
+.container{
+    margin: 0 auto;
+    width: 1180px;
+}
+.h_container{
+    background: #F3F3F3;
+}
+#header{
+    .wrap{ 
+        height: $wrap_h;
+        margin: 0 auto;
+        width: 1180px;
+        overflow: hidden;
+        .left{
+            float: left;
+            width: 550px;
+            height: $wrap_h;
+            line-height: $wrap_h;
+            overflow: hidden;
+        }
+        .right{
+            float: right;
+            width: 630px;
+            height: $wrap_h;
+            line-height: $wrap_h;
+            text-align: right;
+            overflow: hidden;
+            a{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            $bgimg:url(../css/images/icon.png) no-repeat 0;
+            .user{
+                padding-left: 20px;
+                background: $bgimg -20px;
+            }
+            .cart .number {
+                font-weight: bold;
+                color: #DB3962;
+            }
+            .certify {
+                padding-left: 17px;
+                background: $bgimg -39px;
+            }
+            .yuyue {
+                padding-left: 17px;
+                background: $bgimg -39px;
+            }
+            .mobile {
+                padding-left: 22px;
+                background: $bgimg -64px;
+            }
+            .weixin {
+                padding-left: 25px;
+                background: $bgimg -96px;
+            }
+            .weibo {
+                margin-right: 2px;
+                padding-left: 26px;
+                background: $bgimg -129px;
+            }
+        }
+    }
+    .header{
+        $_header:90px;
+        .h_wrap{
+            padding: 5px 0;
+            height: $_header;
+            margin: 0 auto;
+            width: 1180px;
+            overflow: hidden;
+            .logo {
+                float: left;
+                width: 200px;
+                height: $_header;
+            }
+            .code {
+                float: right;
+                width: 240px;
+                height: $_header;
+            }
+            .main {
+                float: right;
+                width: 550px;
+                height: $_header;
+                .search {
+                    float: left;
+                    margin-top: 18px;
+                    margin-left: 150px;
+                    width: 260px;
+                    height: 30px;
+                    border: 1px solid #6D6C6C;
+                    .input {
+                        float: left;
+                        padding: 0px;
+                        width: 199px;
+                        height: 30px;
+                        border: none;
+                        text-align: center;
+                        overflow: hidden;
+                        input {
+                            width: 194px;
+                            height: 30px;
+                            line-height: 26px;
+                            color: #7D7D7D;
+                            border: none;
+                        }
+                    }
+                    .submit {
+                        float: right;
+                        width: 60px;
+                        height: 30px;
+                        line-height: 28px;
+                        font-size: 14px;
+                        color: #FFFFFF;
+                        text-align: center;
+                        border-left: 1px solid #6D6C6C;
+                        background: #6D6C6C;
+                        cursor: pointer;
+                    }
+                }
+                .hotkey {
+                    clear: both;
+                    float: left;
+                    margin-top: 10px;
+                    margin-left: 150px;
+                    width: 228px;
+                    height: 30px;
+                    a {
+                       margin-right: 6px;
+                       color: #7D7D7D;
+                   }
+                }
+            }
+        }
+    }
+    .menuer{
+        .container{
+            height: 38px;
+            .menu {
+                float: left;
+                width: 200px;
+                height: 38px;
+                ul.topmenu:hover ul.submenu{display: block;}
+                ul.topmenu {
+                    float: left;
+                    width: 200px;
+                    li {
+                        float: left;
+                        padding: 0 0 0 17px;
+                        position: relative;
+                        width: 183px;
+                        height: 38px;
+                        line-height: 38px;
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: #FFFFFF;
+                        background: #C11E20 url(../css/images/menu_icon.png) no-repeat 160px 0;
+                        cursor: pointer;
+                        z-index: 999;
+                        ul.submenu {
+                            float: left;
+                            display: none;
+                            list-style: none;
+                            width: 200px;
+                            position: absolute;
+                            top: 38px;
+                            left: 0;
+                            background: #312D2D;
+                            li {
+                                clear: both;
+                                padding: 8px 5px 1px 5px;
+                                width: 190px;
+                                line-height: 25px;
+                                font-size: 12px;
+                                font-weight: normal;
+                                background: #312D2D;
+                                a {
+                                    margin-left: 12px;
+                                    color: #FFFFFF;
+                                    float: left;
+                                    width: 50px;
+                                }
+                            }
+                            a.bold {
+                                margin-left: 12px;
+                                font-weight: bold;
+                                float: left;
+                                width: 36px;
+                            }
+                            a.nbsp {
+                                margin-left: 60px;
+                            }
+                            a.hots {
+                                margin-left: 12px;
+                                color: #FFFFFF;
+                                float: left;
+                            }
+                            a.join {
+                                width: 100px;
+                                font-weight:bold;
+                                margin-left: 8px;
+                                color: #FFFFFF;
+                                float: left;
+                            }
+                            li.first {
+                                height: 81px;
+                                background: #383333; 
+                            }
+                            li.second {
+                                height: 81px;
+                                background: #312D2D;
+                            }
+                            li.third {
+                                height: 57px;
+                                background: #383333;
+                            }
+                            li.fourth {
+                                height: 51px;
+                                background: #312D2D;
+                            }
+                            li.fifth {
+                                height: 32px;
+                                background: #383333;
+                            }
+                            li.last {
+                                height: 32px;
+                                background: #312D2D;
+                            }
+                        }
+                    }
+                }
+
+            }
+            .home {
+                float: left;
+                padding: 0 25px 0 50px;
+                height: 38px;
+                line-height: 38px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .item {
+                float: left;
+                padding: 0 20px;
+                height: 38px;
+                line-height: 38px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .phone {
+                float: right;
+                width: 240px;
+                height: 38px;
+            }
+        }
+    }
+}
+.homeline1 {
+    clear: both;
+    margin: 0 auto;
+    padding-top: 18px;
+    width: 1180px;
+    height: 210px;
+    background: #FFFFFF;
+    overflow: hidden;
+    div{
+        float: left;
+        padding: 4px;
+        line-height: 22px;
+        text-align: center;
+        border: 1px solid #DDDDDD;
+        overflow: hidden;
+        height: 200px;
+    }
+    .left {            
+        width: 310px;
+   
+    }
+    .center {
+        margin-right: 15px;
+        width: 500px;
+    }
+    .right {
+        margin-left: 15px;
+        width: 310px;
+    }
+}
+.homeline {
+    clear: both;
+    margin: 0 auto;
+    width: 1180px;
+    height: 18px;
+    background: url(images/line.jpg);
+}
+.homeline2 {
+    clear: both;
+    margin: 0 auto;
+    width: 1180px;
+    height: 159px;
+    background: #FFFFFF;
+    overflow: hidden;
+    border: 1px solid #dddddd;
+    .leftdiamondimg {
+        width: 616px;
+        height: 159px;
+        float: left;
+        background-color: #f9f9f9;
+    }
+    .rightsearchbtn {
+        width: 562px;
+        height: 159px;
+        float: left;
+        background: url(images/bg1.png);
+        .inputvalue {
+            margin-top: 20px;
+            float: left;
+            width: 215px;
+            height: 33px;
+            .inputcss {
+                float: left;
+                width: 50px;
+                height: 33px;
+                margin-left: 70px;
+                margin-top: 5px;   
+            }
+            .searchinputcss {
+                width: 40px;
+                height: 15px;
+            }
+            .inputline {
+                float: left;
+                width: 20px;
+                height: 33px;
+                line-height: 30px;
+            }
+           .rightinputcss {
+                float: left;
+                width: 50px;
+                height: 33px;
+                margin-top: 5px;
+            }
+            .inputtxt {
+                height: 33px;
+                line-height: 30px;
+            }
+        }
+        .selectitem {
+            float: left;
+            height: 33px;
+            margin-left: 70px;
+            margin-top: 13px;
+            .imgs {
+                cursor: pointer;
+                float: left;
+                padding: 0 3px;
+                height: 24px;
+            }
+        }
+        .selectitembtn {
+            float: left;
+            margin-left: 370px;
+            margin-top: 5px;
+            height: 33px;
+        }
+    }
+}
+
+
+.homeline3 {
+    clear: both;
+    margin: 0 auto;
+    width: 1180px;
+    height: 429px;
+    background: #FFFFFF;
+    overflow: hidden;
+    div{
+    float: left;
+    overflow: hidden;
+    }
+    .left {
+        width: 321px;
+        height: 429px;
+        background: url(images/1.jpg);
+        .homeimgs {
+            float: left;
+            width: 320px;
+            height: 180px;
+        }
+        .hometype {
+            float: left;
+            padding: 12px 0 5px 0;
+            width: 200px;
+            height: 120px;
+            div {
+                float: left;
+                width: 200px;
+                height: 24px;
+                line-height: 24px;
+                text-indent: 30px;
+            }
+        }
+        .homeprice {
+            float: left;
+            width: 200px;
+            height: 100px;
+            div {
+                float: left;
+                width: 200px;
+                height: 24px;
+                line-height: 24px;
+                text-indent: 30px;
+            }
+        }
+    }
+    .center {
+        width: 259px;
+        height: 429px;
+    }
+    .right {
+        width: 600px;
+        height: 429px;
+    }
+    .righttop {
+        width: 600px;
+        height: 211px;
+    }
+    .righttopleft {
+        width: 299px;
+        height: 211px;
+    }
+    .righttopright {
+        width: 301px;
+        height: 211px;
+    }
+    .rightbottom {
+        width: 600px;
+        height: 218px;
+    }
+    .rightbottomleft {
+        width: 200px;
+        height: 218px;
+    }
+    .rightbottomcenter {
+        width: 195px;
+        height: 218px;
+    }
+    .rightbottomright {
+        width: 205px;
+        height: 218px;
+    }
+}
+.homeline4 {
+    clear: both;
+    margin: 0 auto;
+    width: 1180px;
+    height: 116px;
+    background: #FFFFFF;
+    overflow: hidden;
+    div{float:left;}
+}

@@ -1,0 +1,161 @@
+.container { margin: 0 auto; width: 1180px; }
+
+.h_container { background: #F3F3F3; }
+
+#header .wrap { height: 38px; margin: 0 auto; width: 1180px; overflow: hidden; }
+
+#header .wrap .left { float: left; width: 550px; height: 38px; line-height: 38px; overflow: hidden; }
+
+#header .wrap .right { float: right; width: 630px; height: 38px; line-height: 38px; text-align: right; overflow: hidden; }
+
+#header .wrap .right a { margin-left: 10px; margin-right: 10px; }
+
+#header .wrap .right .user { padding-left: 20px; background: url(../css/images/icon.png) no-repeat 0 -20px; }
+
+#header .wrap .right .cart .number { font-weight: bold; color: #DB3962; }
+
+#header .wrap .right .certify { padding-left: 17px; background: url(../css/images/icon.png) no-repeat 0 -39px; }
+
+#header .wrap .right .yuyue { padding-left: 17px; background: url(../css/images/icon.png) no-repeat 0 -39px; }
+
+#header .wrap .right .mobile { padding-left: 22px; background: url(../css/images/icon.png) no-repeat 0 -64px; }
+
+#header .wrap .right .weixin { padding-left: 25px; background: url(../css/images/icon.png) no-repeat 0 -96px; }
+
+#header .wrap .right .weibo { margin-right: 2px; padding-left: 26px; background: url(../css/images/icon.png) no-repeat 0 -129px; }
+
+#header .header .h_wrap { padding: 5px 0; height: 90px; margin: 0 auto; width: 1180px; overflow: hidden; }
+
+#header .header .h_wrap .logo { float: left; width: 200px; height: 90px; }
+
+#header .header .h_wrap .code { float: right; width: 240px; height: 90px; }
+
+#header .header .h_wrap .main { float: right; width: 550px; height: 90px; }
+
+#header .header .h_wrap .main .search { float: left; margin-top: 18px; margin-left: 150px; width: 260px; height: 30px; border: 1px solid #6D6C6C; }
+
+#header .header .h_wrap .main .search .input { float: left; padding: 0px; width: 199px; height: 30px; border: none; text-align: center; overflow: hidden; }
+
+#header .header .h_wrap .main .search .input input { width: 194px; height: 30px; line-height: 26px; color: #7D7D7D; border: none; }
+
+#header .header .h_wrap .main .search .submit { float: right; width: 60px; height: 30px; line-height: 28px; font-size: 14px; color: #FFFFFF; text-align: center; border-left: 1px solid #6D6C6C; background: #6D6C6C; cursor: pointer; }
+
+#header .header .h_wrap .main .hotkey { clear: both; float: left; margin-top: 10px; margin-left: 150px; width: 228px; height: 30px; }
+
+#header .header .h_wrap .main .hotkey a { margin-right: 6px; color: #7D7D7D; }
+
+#header .menuer .container { height: 38px; }
+
+#header .menuer .container .menu { float: left; width: 200px; height: 38px; }
+
+#header .menuer .container .menu ul.topmenu:hover ul.submenu { display: block; }
+
+#header .menuer .container .menu ul.topmenu { float: left; width: 200px; }
+
+#header .menuer .container .menu ul.topmenu li { float: left; padding: 0 0 0 17px; position: relative; width: 183px; height: 38px; line-height: 38px; font-size: 14px; font-weight: bold; color: #FFFFFF; background: #C11E20 url(../css/images/menu_icon.png) no-repeat 160px 0; cursor: pointer; z-index: 999; }
+
+#header .menuer .container .menu ul.topmenu li ul.submenu { float: left; display: none; list-style: none; width: 200px; position: absolute; top: 38px; left: 0; background: #312D2D; }
+
+#header .menuer .container .menu ul.topmenu li ul.submenu li { clear: both; padding: 8px 5px 1px 5px; width: 190px; line-height: 25px; font-size: 12px; font-weight: normal; background: #312D2D; }
+
+#header .menuer .container .menu ul.topmenu li ul.submenu li a { margin-left: 12px; color: #FFFFFF; float: left; width: 50px; }
+
+#header .menuer .container .menu ul.topmenu li ul.submenu a.bold { margin-left: 12px; font-weight: bold; float: left; width: 36px; }
+
+#header .menuer .container .menu ul.topmenu li ul.submenu a.nbsp { margin-left: 60px; }
+
+#header .menuer .container .menu ul.topmenu li ul.submenu a.hots { margin-left: 12px; color: #FFFFFF; float: left; }
+
+#header .menuer .container .menu ul.topmenu li ul.submenu a.join { width: 100px; font-weight: bold; margin-left: 8px; color: #FFFFFF; float: left; }
+
+#header .menuer .container .menu ul.topmenu li ul.submenu li.first { height: 81px; background: #383333; }
+
+#header .menuer .container .menu ul.topmenu li ul.submenu li.second { height: 81px; background: #312D2D; }
+
+#header .menuer .container .menu ul.topmenu li ul.submenu li.third { height: 57px; background: #383333; }
+
+#header .menuer .container .menu ul.topmenu li ul.submenu li.fourth { height: 51px; background: #312D2D; }
+
+#header .menuer .container .menu ul.topmenu li ul.submenu li.fifth { height: 32px; background: #383333; }
+
+#header .menuer .container .menu ul.topmenu li ul.submenu li.last { height: 32px; background: #312D2D; }
+
+#header .menuer .container .home { float: left; padding: 0 25px 0 50px; height: 38px; line-height: 38px; font-size: 14px; font-weight: bold; }
+
+#header .menuer .container .item { float: left; padding: 0 20px; height: 38px; line-height: 38px; font-size: 14px; font-weight: bold; }
+
+#header .menuer .container .phone { float: right; width: 240px; height: 38px; }
+
+.homeline1 { clear: both; margin: 0 auto; padding-top: 18px; width: 1180px; height: 210px; background: #FFFFFF; overflow: hidden; }
+
+.homeline1 div { float: left; padding: 4px; line-height: 22px; text-align: center; border: 1px solid #DDDDDD; overflow: hidden; height: 200px; }
+
+.homeline1 .left { width: 310px; }
+
+.homeline1 .center { margin-right: 15px; width: 500px; }
+
+.homeline1 .right { margin-left: 15px; width: 310px; }
+
+.homeline { clear: both; margin: 0 auto; width: 1180px; height: 18px; background: url(images/line.jpg); }
+
+.homeline2 { clear: both; margin: 0 auto; width: 1180px; height: 159px; background: #FFFFFF; overflow: hidden; border: 1px solid #dddddd; }
+
+.homeline2 .leftdiamondimg { width: 616px; height: 159px; float: left; background-color: #f9f9f9; }
+
+.homeline2 .rightsearchbtn { width: 562px; height: 159px; float: left; background: url(images/bg1.png); }
+
+.homeline2 .rightsearchbtn .inputvalue { margin-top: 20px; float: left; width: 215px; height: 33px; }
+
+.homeline2 .rightsearchbtn .inputvalue .inputcss { float: left; width: 50px; height: 33px; margin-left: 70px; margin-top: 5px; }
+
+.homeline2 .rightsearchbtn .inputvalue .searchinputcss { width: 40px; height: 15px; }
+
+.homeline2 .rightsearchbtn .inputvalue .inputline { float: left; width: 20px; height: 33px; line-height: 30px; }
+
+.homeline2 .rightsearchbtn .inputvalue .rightinputcss { float: left; width: 50px; height: 33px; margin-top: 5px; }
+
+.homeline2 .rightsearchbtn .inputvalue .inputtxt { height: 33px; line-height: 30px; }
+
+.homeline2 .rightsearchbtn .selectitem { float: left; height: 33px; margin-left: 70px; margin-top: 13px; }
+
+.homeline2 .rightsearchbtn .selectitem .imgs { cursor: pointer; float: left; padding: 0 3px; height: 24px; }
+
+.homeline2 .rightsearchbtn .selectitembtn { float: left; margin-left: 370px; margin-top: 5px; height: 33px; }
+
+.homeline3 { clear: both; margin: 0 auto; width: 1180px; height: 429px; background: #FFFFFF; overflow: hidden; }
+
+.homeline3 div { float: left; overflow: hidden; }
+
+.homeline3 .left { width: 321px; height: 429px; background: url(images/1.jpg); }
+
+.homeline3 .left .homeimgs { float: left; width: 320px; height: 180px; }
+
+.homeline3 .left .hometype { float: left; padding: 12px 0 5px 0; width: 200px; height: 120px; }
+
+.homeline3 .left .hometype div { float: left; width: 200px; height: 24px; line-height: 24px; text-indent: 30px; }
+
+.homeline3 .left .homeprice { float: left; width: 200px; height: 100px; }
+
+.homeline3 .left .homeprice div { float: left; width: 200px; height: 24px; line-height: 24px; text-indent: 30px; }
+
+.homeline3 .center { width: 259px; height: 429px; }
+
+.homeline3 .right { width: 600px; height: 429px; }
+
+.homeline3 .righttop { width: 600px; height: 211px; }
+
+.homeline3 .righttopleft { width: 299px; height: 211px; }
+
+.homeline3 .righttopright { width: 301px; height: 211px; }
+
+.homeline3 .rightbottom { width: 600px; height: 218px; }
+
+.homeline3 .rightbottomleft { width: 200px; height: 218px; }
+
+.homeline3 .rightbottomcenter { width: 195px; height: 218px; }
+
+.homeline3 .rightbottomright { width: 205px; height: 218px; }
+
+.homeline4 { clear: both; margin: 0 auto; width: 1180px; height: 116px; background: #FFFFFF; overflow: hidden; }
+
+.homeline4 div { float: left; }
