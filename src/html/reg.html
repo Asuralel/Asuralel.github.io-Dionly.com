@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>免费注册 - 戴欧妮钻石</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/reg.css" />
+    <script src="../lib/require.js" data-main="../js/reg"></script>  
+</head>
+<body>
+    <header></header>
+    <div class="reg">
+        <div class="regmain">
+            <div class="mainright">
+                <div class="reguserhead"><a href="login.html">会员登录</a></div>
+                <div class="regnameinput">
+                    <div class="inputright"><input type="text" id="regname" name="regname" maxlength="11" class="regname" placeholder="11位数字"></div>
+                </div>
+                <div class="regnameerror" id="regnameerror"></div>
+                <div class="regimgcodeinput">
+                    <div class="inputright"><input type="text" id="regimgcode" name="regimgcode" maxlength="4" class="regimgcode" ></div>
+                    <div class="inputreset" id="inputreset" ><img src="../api/reg.php" id="getcode_char"></div>
+                    <div class="resetimgbtn" id="resetimgbtn"></div>
+
+                </div>
+                <div class="regimgcodeerror" id="regimgcodeerror"></div>
+                <div class="regcodeinput">
+                    <div class="inputright"><input type="text" id="regcode" name="regcode" maxlength="6" class="regcode" placeholder="6位数字"></div>
+                    <div class="inputsend" id="regsend" >获取验证码</div>
+                </div>
+                <div class="regcodeerror" id="regcodeerror"></div>
+                <div class="regpassinput">
+                    <div class="inputright"><input type="password" id="regpass" name="regpass" maxlength="20" class="regpass" placeholder="6~20位必需包含字母数字"></div>
+                </div>
+                <div class="regpasserror" id="regpasserror"></div>
+                <div class="regpassinput">
+                    <div class="inputright"><input type="password" id="regword" name="regword" maxlength="20" class="regpass" placeholder="6~20位必需包含字母数字"></div>
+                </div>
+                <div class="regworderror" id="regworderror"></div>
+                <div class="regreaditem">
+                    <div class="regreadbox"><input type="checkbox" checked="checked" id="regread" name="regread"><input name="redirecturl" type="hidden" id="redirecturl" value="http://www.dionly.com/"></div>
+                    <div class="regreadleft">我已阅读并同意《<a href="#" id="regagreeservice" >戴欧妮珠宝用户服务协议</a>》</div>
+                </div>
+                <div class="regreaderror" id="regreaderror"></div>
+                <div class="regbutnitem" ></div>
+                <div class="regiconitem">
+                    <a href="#"><img src="../images/Connect_logo_7.png" style="margin-bottom:12px;"></a>
+                    <a href="#"><img src="../images/wb.gif" alt=""></a>
+                    <a href="#"><img src="../images/zfb.gif" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+</body>
+</html>

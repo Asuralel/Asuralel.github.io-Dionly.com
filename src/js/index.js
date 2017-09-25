@@ -36,19 +36,39 @@ require.config({
  */
 require(['jquery','bootstrap'],function($,bt){
 	//jquery加载完成后，执行这里的代码
-	$('.carousel').carousel({
-	  interval: 4000
-	})
+	$(function($){
+		$('.carousel').carousel({
+		  interval: 4000
+		})
 
-	$('#cityareas #city_shenzhen').css({'color':'#8A0003','background':'url(../src/css/images/select.gif)'});
-	$('#cityareas .name').hover(function(){
-		$(this).css({'color':'#8A0003','background':'url(../src/css/images/select.gif)'});
-		$(this).siblings().css({'color':'#222','background':''});
-		$('#sitefoot_cityshopwrap .city .cityhide')[$(this).index()].style.display='block';
-		$($('#sitefoot_cityshopwrap .city .cityhide')[$(this).index()]).siblings().css({'display':'none'});
-		$('#cityshops').attr("src",'../src/images/city'+$(this).index()+'.jpg');
-	},function(){
-		$(this).css({'color':'#222','background':''});
+		$('#cityareas #city_shenzhen').css({'color':'#8A0003','background':'url(css/images/select.gif)'});
+		$('#cityareas .name').hover(function(){
+			$(this).css({'color':'#8A0003','background':'url(css/images/select.gif)'});
+			$(this).siblings().css({'color':'#222','background':''});
+			$('#sitefoot_cityshopwrap .city .cityhide')[$(this).index()].style.display='block';
+			$($('#sitefoot_cityshopwrap .city .cityhide')[$(this).index()]).siblings().css({'display':'none'});
+			$('#cityshops').attr("src",'images/city'+$(this).index()+'.jpg');
+		},function(){
+			$(this).css({'color':'#222','background':''});
+		})
+		
+		$('#totops').click(function(){
+			window.scrollTo(0,0);
+		})
+
+		$('#qiehuan').click(function(){
+			$('.ZebraDialog').fadeIn();
+			$('.ZebraDialogOverlay').fadeIn();
+			
+			return false;
+		})
+		$('.ZebraDialog_Close').click(function(){
+			$('.ZebraDialog').fadeOut();
+			$('.ZebraDialogOverlay').fadeOut();
+			return false;
+		})
+		
 	})
+	
 
 });

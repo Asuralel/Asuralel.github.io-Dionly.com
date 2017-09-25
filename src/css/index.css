@@ -296,117 +296,109 @@
 .footer .cityhide { display: none; }
 
 .footer .cityline { clear: both; margin: 0 auto; width: 1180px; height: 30px; background: url(images/linebg.jpg); }
+.security { margin: 0 auto; width: 100%; height: 85px; background: #FFFFFF url(images/security.jpg) center center no-repeat; }
+.shouhou { margin: 0 auto; padding: 15px 0; width: 100%; height: 130px; border-top: 1px solid #CCCCCC; background: #E9E9E9; }
+.shouhou .wrap { margin: 0 auto; width: 1178px; height: 130px; border-left: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC; background: url(images/shouhou.png) no-repeat; }
+.shouhou .wrap ul { margin: 0; padding: 0; }
+.shouhou .wrap ul li { margin: 0; padding: 0; float: left; width: 195px; height: 130px; border-right: 1px solid #CCCCCC; list-style: none; }
+.shouhou .wrap ul li div { float: left; padding-left: 50px; padding-top: 15px; }
+.shouhou .wrap ul li div span { float: left; width: 145px; font-weight: bold; line-height: 30px; }
+.shouhou .wrap ul li div a { float: left; width: 145px; line-height: 24px; color: #555555; }
+.shouhou .wrap ul li div a:hover { color: #CC0000; }
+.shouhou .wrap ul li.noline { border: none; }
+.contact { margin: 0 auto; padding: 15px 0; width: 100%; height: 66px; background: #333333; }
+.contact .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 80px; color: #B9B9B9; }
+.contact .wrap .left { float: left; width: 1000px; }
+.contact .wrap .left .address { width: 1000px; height: 35px; line-height: 35px; }
+.contact .wrap .left .copyright { width: 1000px; height: 30px; line-height: 30px; }
+.contact .wrap .right { float: left; width: 170px; text-align: right; }
+.contact .wrap .right .hotline { width: 170px; height: 35px; line-height: 35px; }
+.contact .wrap .right .phonenumber { width: 170px; height: 30px; line-height: 25px; font-size: 20px; font-weight: bold; font-family: "黑体"; }
+.contact .wrap .right .phonenumber span { color: #FFFF00; }
+.footicon { margin: 0 auto; padding: 15px 0; width: 100%; height: 53px; background: #FFFFFF; }
+.footicon .wrap { margin: 0 auto; width: 1180px; height: 53px; background: url(images/footicon.gif); overflow: hidden; }
+.footicon .wrap a { margin-right: 23px; float: left; width: 123px; height: 53px; }
+.footicon .wrap a.last { margin-right: 0; }
+.friendlink { margin: 0 auto; padding: 15px 0; width: 100%; height: 105px; border-top: 1px solid #CCCCCC; color: #999999; background: #F0F0F0; }
+.friendlink a { color: #888888; }
+.friendlink a:hover { color: #CC0000; }
+.friendlink .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 80px; line-height: 25px; }
+.friendlink .wrap .left { float: left; width: 70px; font-weight: bold; }
+.friendlink .wrap .right { float: left; width: 1100px; }
+.friendlink .wrap .right a { margin-right: 8px; white-space: nowrap; }
+.friendlink .link { margin: 0 auto; padding: 0 5px; width: 1170px; height: 25px; line-height: 25px; text-align: right; }
+.diamondlink { margin: 0 auto; padding: 15px 0; width: 100%; height: 75px; border-top: 1px solid #CCCCCC; color: #999999; background: #F0F0F0; }
+.diamondlink a { color: #888888; }
+.diamondlink a:hover { color: #CC0000; }
+.diamondlink .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 50px; line-height: 25px; }
+.diamondlink .wrap .left { float: left; width: 70px; font-weight: bold; }
+.diamondlink .wrap .right { float: left; width: 1100px; }
+.diamondlink .wrap .right a { margin-right: 8px; white-space: nowrap; }
+.diamondlink .link { margin: 0 auto; padding: 0 5px; width: 1170px; height: 25px; line-height: 25px; text-align: right; }
+.baikelink { margin: 0 auto; padding: 15px 0; width: 100%; height: 75px; border-top: 1px solid #CCCCCC; color: #999999; background: #F0F0F0; }
+.baikelink a { color: #888888; }
+.baikelink a:hover { color: #CC0000; }
+.baikelink .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 50px; line-height: 25px; }
+.baikelink .wrap .left { float: left; width: 70px; font-weight: bold; }
+.baikelink .wrap .right { float: left; width: 1100px; }
+.baikelink .wrap .right a { margin-right: 8px; white-space: nowrap; }
+.baikelink .link { margin: 0 auto; padding: 0 5px; width: 1170px; height: 25px; line-height: 25px; text-align: right; }
+.Zxs li { list-style: none; }
+.Zxs a { text-decoration: none; }
+.Zxs img { border: 0; }
+.Zxs { width: 64px; /*overflow:hidden;*/ position: fixed; right: 5px; bottom: 100px; z-index: 30; }
+.Zxs li { width: 64px; height: 64px; background: #c11e20; margin-top: 2px; position: relative; }
+.Zxs li .Eyj { position: absolute; left: -154px; top: -40px; display: none; border: 1px solid transparent; }
+.Zxs li:hover { background: #D0383A; }
+.Zxs li .Dbs { width: 100%; height: 40px; overflow: hidden; }
+.Zxs li .Dbs img { display: block; margin: 10px auto; }
+.Zxs li .Fnts { width: 100%; height: 24px; line-height: 24px; text-align: center; font-family: 宋体; font-size: 12px; color: #fff; font-weight: 400; }
+.cityer { margin: 0; padding: 0 3px; }
+.cityer ul { margin: 0; padding: 0; }
+.cityer ul li { margin: 0; padding: 10px; list-style: none; line-height: 20px; }
+.cityer ul li span { clear: both; color: #000000; line-height: 20px; font-size: 16px; font-weight: bold; width: 50px; }
+.cityer ul li a { margin: 0 22px 0 0; color: #333333; }
+.cityer ul li a:hover { color: #B20000; }
 
-.footer .security { margin: 0 auto; width: 100%; height: 85px; background: #FFFFFF url(images/security.jpg) center center no-repeat; }
+.ZebraDialog *,
+.ZebraDialog *:after,
+.ZebraDialog *:before { -moz-box-sizing: content-box !important; -webkit-box-sizing: content-box !important; box-sizing: content-box !important; }
 
-.footer .shouhou { margin: 0 auto; padding: 15px 0; width: 100%; height: 130px; border-top: 1px solid #CCCCCC; background: #E9E9E9; }
+.ZebraDialog { width: 400px; z-index: 1001;display:none; }
 
-.footer .shouhou .wrap { margin: 0 auto; width: 1178px; height: 130px; border-left: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC; background: url(images/shouhou.png) no-repeat; }
+.ZebraDialog,
+.ZebraDialog .ZebraDialog_Title,
+.ZebraDialog .ZebraDialog_Body,
+.ZebraDialog .ZebraDialog_Buttons a { margin: 0; padding: 0; font-family: "microsoft yahei"; text-align: left; }
 
-.footer .shouhou .wrap ul { margin: 0; padding: 0; }
+.ZebraDialog .ZebraDialog_Title { border-color: #FFD9D9; border-width: 1px; }
+.ZebraDialog .ZebraDialog_BodyOuter { border-color: #D7D2D1; border-width: 1px; }
+.ZebraDialog .ZebraDialog_ButtonsOuter { border-color: #D7D2D1; border-width: 1px; }
 
-.footer .shouhou .wrap ul li { margin: 0; padding: 0; float: left; width: 195px; height: 130px; border-right: 1px solid #CCCCCC; list-style: none; }
+.ZebraDialog .ZebraDialog_Title { font-size: 14px; font-weight: bold; color: #100D0D; background: #FFD9D9; padding: 10px 12px; line-height: 1; vertical-align: middle; border-bottom: 3px solid #A30101; }
 
-.footer .shouhou .wrap ul li div { float: left; padding-left: 50px; padding-top: 15px; }
+.ZebraDialog .ZebraDialog_BodyOuter { background: #F7F7F7; }
 
-.footer .shouhou .wrap ul li div span { float: left; width: 145px; font-weight: bold; line-height: 30px; }
+.ZebraDialog .ZebraDialog_Body { color: #44484A; padding: 0px; }
 
-.footer .shouhou .wrap ul li div a { float: left; width: 145px; line-height: 24px; color: #555555; }
+.ZebraDialog .ZebraDialog_ButtonsOuter { background: #F7F7F7; padding: 2px 2px 62px 12px; }
 
-.footer .shouhou .wrap ul li div a:hover { color: #CC0000; }
+.ZebraDialog .ZebraDialog_Buttons:before,
+.ZebraDialog .ZebraDialog_Buttons:after { content: "\0020"; display: block; height: 0; visibility: hidden; font-size: 0; }
+.ZebraDialog .ZebraDialog_Buttons:after { clear: both; }
+.ZebraDialog .ZebraDialog_Buttons { *zoom: 1; }
+/* for IE only */
 
-.footer .shouhou .wrap ul li.noline { border: none; }
+.ZebraDialog .ZebraDialog_Buttons a { font-size: 14px; font-weight: bold; color: #FFF; text-shadow: 1px 0px 2px #222; padding: 5px 15px; }
 
-.footer .contact { margin: 0 auto; padding: 15px 0; width: 100%; height: 66px; background: #333333; }
+.ZebraDialog .ZebraDialog_Buttons a:hover { background: #AB0101; color: #FFF; }
 
-.footer .contact .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 80px; color: #B9B9B9; }
+.ZebraDialog a.ZebraDialog_Close { position: absolute; right: 6px; top: 0px; text-decoration: none; font-family: arial, sans-serif; font-weight: bold; font-size: 24px; color: #666; }
 
-.footer .contact .wrap .left { float: left; width: 1000px; }
+.ZebraDialog a.ZebraDialog_Close:hover { }
 
-.footer .contact .wrap .left .address { width: 1000px; height: 35px; line-height: 35px; }
+.ZebraDialog .ZebraDialog_Title a.ZebraDialog_Close { padding-top: 2px; color: #A52425; }
 
-.footer .contact .wrap .left .copyright { width: 1000px; height: 30px; line-height: 30px; }
+.ZebraDialog .ZebraDialog_Title a.ZebraDialog_Close:hover { color: #A52425; }
 
-.footer .contact .wrap .right { float: left; width: 170px; text-align: right; }
-
-.footer .contact .wrap .right .hotline { width: 170px; height: 35px; line-height: 35px; }
-
-.footer .contact .wrap .right .phonenumber { width: 170px; height: 30px; line-height: 25px; font-size: 20px; font-weight: bold; font-family: "黑体"; }
-
-.footer .contact .wrap .right .phonenumber span { color: #FFFF00; }
-
-.footer .footicon { margin: 0 auto; padding: 15px 0; width: 100%; height: 53px; background: #FFFFFF; }
-
-.footer .footicon .wrap { margin: 0 auto; width: 1180px; height: 53px; background: url(images/footicon.gif); overflow: hidden; }
-
-.footer .footicon .wrap a { margin-right: 23px; float: left; width: 123px; height: 53px; }
-
-.footer .footicon .wrap a.last { margin-right: 0; }
-
-.footer .friendlink { margin: 0 auto; padding: 15px 0; width: 100%; height: 105px; border-top: 1px solid #CCCCCC; color: #999999; background: #F0F0F0; }
-
-.footer .friendlink a { color: #888888; }
-
-.footer .friendlink a:hover { color: #CC0000; }
-
-.footer .friendlink .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 80px; line-height: 25px; }
-
-.footer .friendlink .wrap .left { float: left; width: 70px; font-weight: bold; }
-
-.footer .friendlink .wrap .right { float: left; width: 1100px; }
-
-.footer .friendlink .wrap .right a { margin-right: 8px; white-space: nowrap; }
-
-.footer .friendlink .link { margin: 0 auto; padding: 0 5px; width: 1170px; height: 25px; line-height: 25px; text-align: right; }
-
-.footer .diamondlink { margin: 0 auto; padding: 15px 0; width: 100%; height: 75px; border-top: 1px solid #CCCCCC; color: #999999; background: #F0F0F0; }
-
-.footer .diamondlink a { color: #888888; }
-
-.footer .diamondlink a:hover { color: #CC0000; }
-
-.footer .diamondlink .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 50px; line-height: 25px; }
-
-.footer .diamondlink .wrap .left { float: left; width: 70px; font-weight: bold; }
-
-.footer .diamondlink .wrap .right { float: left; width: 1100px; }
-
-.footer .diamondlink .wrap .right a { margin-right: 8px; white-space: nowrap; }
-
-.footer .diamondlink .link { margin: 0 auto; padding: 0 5px; width: 1170px; height: 25px; line-height: 25px; text-align: right; }
-
-.footer .baikelink { margin: 0 auto; padding: 15px 0; width: 100%; height: 75px; border-top: 1px solid #CCCCCC; color: #999999; background: #F0F0F0; }
-
-.footer .baikelink a { color: #888888; }
-
-.footer .baikelink a:hover { color: #CC0000; }
-
-.footer .baikelink .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 50px; line-height: 25px; }
-
-.footer .baikelink .wrap .left { float: left; width: 70px; font-weight: bold; }
-
-.footer .baikelink .wrap .right { float: left; width: 1100px; }
-
-.footer .baikelink .wrap .right a { margin-right: 8px; white-space: nowrap; }
-
-.footer .baikelink .link { margin: 0 auto; padding: 0 5px; width: 1170px; height: 25px; line-height: 25px; text-align: right; }
-
-.footer .Zxs li { list-style: none; }
-
-.footer .Zxs a { text-decoration: none; }
-
-.footer .Zxs img { border: 0; }
-
-.footer .Zxs { width: 64px; /*overflow:hidden;*/ position: fixed; right: 5px; bottom: 100px; z-index: 30; }
-
-.footer .Zxs li { width: 64px; height: 64px; background: #c11e20; margin-top: 2px; position: relative; }
-
-.footer .Zxs li .Eyj { position: absolute; left: -154px; top: -40px; display: none; border: 1px solid transparent; }
-
-.footer .Zxs li:hover { background: #D0383A; }
-
-.footer .Zxs li .Dbs { width: 100%; height: 40px; overflow: hidden; }
-
-.footer .Zxs li .Dbs img { display: block; margin: 10px auto; }
-
-.footer .Zxs li .Fnts { width: 100%; height: 24px; line-height: 24px; text-align: center; font-family: 宋体; font-size: 12px; color: #fff; font-weight: 400; }
+.ZebraDialogOverlay { background: #666; z-index: 1000; width: 100%; height: 100%;display:none; }

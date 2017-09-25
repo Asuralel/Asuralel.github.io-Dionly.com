@@ -669,120 +669,121 @@ $wrap_h:38px;
         .cityshow { display: block; }
         .cityhide { display: none; }
         .cityline { clear: both; margin: 0 auto; width: 1180px; height: 30px; background: url(images/linebg.jpg); }
-        .security { margin: 0 auto; width: 100%; height: 85px; background: #FFFFFF url(images/security.jpg) center center no-repeat; }
-        .shouhou { margin: 0 auto; padding: 15px 0; width: 100%; height: 130px; border-top: 1px solid #CCCCCC; background: #E9E9E9;
-            .wrap { margin: 0 auto; width: 1178px; height: 130px; border-left: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC; background: url(images/shouhou.png) no-repeat; 
-                ul { margin: 0; padding: 0; 
-                    li { margin: 0; padding: 0; float: left; width: 195px; height: 130px; border-right: 1px solid #CCCCCC; list-style: none; 
-                        div { float: left; padding-left: 50px; padding-top: 15px; 
-                            span { float: left; width: 145px; font-weight: bold; line-height: 30px; }
-                            a { float: left; width: 145px; line-height: 24px; color: #555555; }
-                            a:hover { color: #CC0000; }
-                        }
-                    }
-                    li.noline { border: none; }
-                }
-            } 
-        }
-        .contact { margin: 0 auto; padding: 15px 0; width: 100%; height: 66px; background: #333333; 
-            .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 80px; color: #B9B9B9; 
-                .left { float: left; width: 1000px; 
-                    .address { width: 1000px; height: 35px; line-height: 35px; }
-                    .copyright { width: 1000px; height: 30px; line-height: 30px; }
-                }
-                .right { float: left; width: 170px; text-align: right; 
-                    .hotline { width: 170px; height: 35px; line-height: 35px; }
-                    .phonenumber { width: 170px; height: 30px; line-height: 25px; font-size: 20px; font-weight: bold; font-family: "黑体"; 
-                        span { color: #FFFF00; }
-                    }
+        
+}
+.security { margin: 0 auto; width: 100%; height: 85px; background: #FFFFFF url(images/security.jpg) center center no-repeat; }
+.shouhou { margin: 0 auto; padding: 15px 0; width: 100%; height: 130px; border-top: 1px solid #CCCCCC; background: #E9E9E9;
+    .wrap { margin: 0 auto; width: 1178px; height: 130px; border-left: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC; background: url(images/shouhou.png) no-repeat; 
+        ul { margin: 0; padding: 0; 
+            li { margin: 0; padding: 0; float: left; width: 195px; height: 130px; border-right: 1px solid #CCCCCC; list-style: none; 
+                div { float: left; padding-left: 50px; padding-top: 15px; 
+                    span { float: left; width: 145px; font-weight: bold; line-height: 30px; }
+                    a { float: left; width: 145px; line-height: 24px; color: #555555; }
+                    a:hover { color: #CC0000; }
                 }
             }
+            li.noline { border: none; }
         }
-    .footicon { margin: 0 auto; padding: 15px 0; width: 100%; height: 53px; background: #FFFFFF; 
-        .wrap { margin: 0 auto; width: 1180px; height: 53px; background: url(images/footicon.gif); overflow: hidden; 
-            a { margin-right: 23px; float: left; width: 123px; height: 53px; }
-            a.last { margin-right: 0; }
+    } 
+}
+.contact { margin: 0 auto; padding: 15px 0; width: 100%; height: 66px; background: #333333; 
+    .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 80px; color: #B9B9B9; 
+        .left { float: left; width: 1000px; 
+            .address { width: 1000px; height: 35px; line-height: 35px; }
+            .copyright { width: 1000px; height: 30px; line-height: 30px; }
         }
-    }
-    .friendlink { margin: 0 auto; padding: 15px 0; width: 100%; height: 105px; border-top: 1px solid #CCCCCC; color: #999999; background: #F0F0F0; 
-        a { color: #888888; }
-        a:hover { color: #CC0000; }
-        .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 80px; line-height: 25px; 
-            .left { float: left; width: 70px; font-weight: bold; }
-            .right { float: left; width: 1100px; 
-                a { margin-right: 8px; white-space: nowrap; }
+        .right { float: left; width: 170px; text-align: right; 
+            .hotline { width: 170px; height: 35px; line-height: 35px; }
+            .phonenumber { width: 170px; height: 30px; line-height: 25px; font-size: 20px; font-weight: bold; font-family: "黑体"; 
+                span { color: #FFFF00; }
             }
         }
-        .link { margin: 0 auto; padding: 0 5px; width: 1170px; height: 25px; line-height: 25px; text-align: right; }
     }
-    .diamondlink { margin: 0 auto; padding: 15px 0; width: 100%; height: 75px; border-top: 1px solid #CCCCCC; color: #999999; background: #F0F0F0; 
-        a { color: #888888; }
-        a:hover { color: #CC0000; }
-        .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 50px; line-height: 25px; 
-            .left { float: left; width: 70px; font-weight: bold; }
-            .right { float: left; width: 1100px; 
-                a { margin-right: 8px; white-space: nowrap; }
-            }
+}
+.footicon { margin: 0 auto; padding: 15px 0; width: 100%; height: 53px; background: #FFFFFF; 
+    .wrap { margin: 0 auto; width: 1180px; height: 53px; background: url(images/footicon.gif); overflow: hidden; 
+        a { margin-right: 23px; float: left; width: 123px; height: 53px; }
+        a.last { margin-right: 0; }
+    }
+}
+.friendlink { margin: 0 auto; padding: 15px 0; width: 100%; height: 105px; border-top: 1px solid #CCCCCC; color: #999999; background: #F0F0F0; 
+    a { color: #888888; }
+    a:hover { color: #CC0000; }
+    .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 80px; line-height: 25px; 
+        .left { float: left; width: 70px; font-weight: bold; }
+        .right { float: left; width: 1100px; 
+            a { margin-right: 8px; white-space: nowrap; }
         }
-        .link { margin: 0 auto; padding: 0 5px; width: 1170px; height: 25px; line-height: 25px; text-align: right; }
     }
-    .baikelink { margin: 0 auto; padding: 15px 0; width: 100%; height: 75px; border-top: 1px solid #CCCCCC; color: #999999; background: #F0F0F0; 
-        a { color: #888888; }
-        a:hover { color: #CC0000; }
-        .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 50px; line-height: 25px; 
-            .left { float: left; width: 70px; font-weight: bold; }
-            .right { float: left; width: 1100px; 
-                a { margin-right: 8px; white-space: nowrap; }
-            }
+    .link { margin: 0 auto; padding: 0 5px; width: 1170px; height: 25px; line-height: 25px; text-align: right; }
+}
+.diamondlink { margin: 0 auto; padding: 15px 0; width: 100%; height: 75px; border-top: 1px solid #CCCCCC; color: #999999; background: #F0F0F0; 
+    a { color: #888888; }
+    a:hover { color: #CC0000; }
+    .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 50px; line-height: 25px; 
+        .left { float: left; width: 70px; font-weight: bold; }
+        .right { float: left; width: 1100px; 
+            a { margin-right: 8px; white-space: nowrap; }
         }
-        .link { margin: 0 auto; padding: 0 5px; width: 1170px; height: 25px; line-height: 25px; text-align: right; }
     }
-    .Zxs li{list-style:none;}
-    .Zxs a{text-decoration:none;}
-    .Zxs img{border:0;}
-    /*咨询入口*/
-    .Zxs{
-        width:64px;
-        /*overflow:hidden;*/
-        position:fixed;
-        right:5px;
-        bottom:100px;
-        z-index:30;
+    .link { margin: 0 auto; padding: 0 5px; width: 1170px; height: 25px; line-height: 25px; text-align: right; }
+}
+.baikelink { margin: 0 auto; padding: 15px 0; width: 100%; height: 75px; border-top: 1px solid #CCCCCC; color: #999999; background: #F0F0F0; 
+    a { color: #888888; }
+    a:hover { color: #CC0000; }
+    .wrap { margin: 0 auto; padding: 0 5px; width: 1170px; height: 50px; line-height: 25px; 
+        .left { float: left; width: 70px; font-weight: bold; }
+        .right { float: left; width: 1100px; 
+            a { margin-right: 8px; white-space: nowrap; }
+        }
     }
-    .Zxs li{
-        width:64px;
-        height:64px;
-        background:#c11e20;
-        margin-top:2px;
-        position:relative;
-    }
-    .Zxs li .Eyj{
-        position:absolute;
-        left:-154px;
-        top:-40px;
-        display:none;
-        border:1px solid transparent;
-    }
-    .Zxs li:hover{
-        background:#D0383A;
-    }
-    .Zxs li .Dbs{
-        width:100%;
-        height:40px;
-        overflow:hidden;
-    }
-    .Zxs li .Dbs img{
-        display:block;
-         margin:10px auto;
-    }
-    .Zxs li .Fnts{
-        width:100%;
-        height:24px;
-        line-height:24px;
-        text-align:center;
-        font-family:宋体;
-        font-size:12px;
-        color:#fff;
-        font-weight:400;
-    }
+    .link { margin: 0 auto; padding: 0 5px; width: 1170px; height: 25px; line-height: 25px; text-align: right; }
+}
+.Zxs li{list-style:none;}
+.Zxs a{text-decoration:none;}
+.Zxs img{border:0;}
+/*咨询入口*/
+.Zxs{
+    width:64px;
+    /*overflow:hidden;*/
+    position:fixed;
+    right:5px;
+    bottom:100px;
+    z-index:30;
+}
+.Zxs li{
+    width:64px;
+    height:64px;
+    background:#c11e20;
+    margin-top:2px;
+    position:relative;
+}
+.Zxs li .Eyj{
+    position:absolute;
+    left:-154px;
+    top:-40px;
+    display:none;
+    border:1px solid transparent;
+}
+.Zxs li:hover{
+    background:#D0383A;
+}
+.Zxs li .Dbs{
+    width:100%;
+    height:40px;
+    overflow:hidden;
+}
+.Zxs li .Dbs img{
+    display:block;
+     margin:10px auto;
+}
+.Zxs li .Fnts{
+    width:100%;
+    height:24px;
+    line-height:24px;
+    text-align:center;
+    font-family:宋体;
+    font-size:12px;
+    color:#fff;
+    font-weight:400;
 }

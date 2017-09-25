@@ -1,0 +1,84 @@
+.reg { width: 100%; height: 606px; background: #FBEDEC url(images/reg.jpg) no-repeat center center; }
+.reg .regmain { margin: 0 auto; width: 1180px; }
+.reg .regmain .mainright { float: right; width: 518px; height: 606px; }
+.reg .regmain .reguserhead { float: left; margin-top: 70px; width: 385px; height: 25px; font-size: 14px; text-align: right; }
+.reg .regmain .reguserhead a { color: #DB3962; }
+.reg .regmain .regnameinput { float: left; margin-top: 40px; width: 390px; height: 30px; }
+.reg .regmain .regnameinput .inputright { float: left; margin-left: 150px; width: 200px; height: 30px; }
+.reg .regmain .regnameinput .inputright input { width: 150px; padding: 1px 3px; border: none; height: 28px; line-height: 28px; background: #FFFFFF; font-size: 14px; }
+.reg .regmain .regimgcodeinput { float: left; margin-top: 3px; width: 390px; height: 30px; }
+.reg .regmain .regimgcodeinput .inputright { float: left; margin-left: 150px; width: 88px; height: 30px; }
+.reg .regmain .regimgcodeinput .inputright input { width: 80px; padding: 1px 3px; border: none; height: 28px; line-height: 28px; background: #FFFFFF; font-size: 14px; }
+.reg .regmain .regimgcodeinput .inputright input.regimgcode { }
+.reg .regmain .regimgcodeinput .inputreset { float: left; width: 60px; height: 30px; line-height: 30px; font-size: 13px; text-align: center; cursor: pointer; }
+.reg .regmain .regimgcodeinput .resetimgbtn { float: left; width: 60px; height: 30px; line-height: 30px; font-size: 13px; text-align: center; cursor: pointer; }
+.reg .regmain .regimgcodeinput .inputgray { color: #888888; }
+.reg .regmain .regimgcodeerror { float: left; margin-left: 150px; margin-top: 3px; width: 234px; height: 18px; color: #DB3962; overflow: hidden; }
+
+
+
+
+
+.reg .regmain .regnameerror { float: left; margin-left: 150px; margin-top: 3px; width: 234px; height: 18px; color: #DB3962; overflow: hidden; }
+.reg .regmain .regnameerror a { color: #DB3962; }
+.reg .regmain .regcodeinput { float: left; margin-top: 5px; width: 390px; height: 30px; }
+.reg .regmain .regcodeinput .inputright { float: left; margin-left: 150px; width: 100px; height: 30px; }
+.reg .regmain .regcodeinput .inputright input { width: 80px; padding: 1px 3px; border: none; height: 28px; line-height: 28px; background: #FFFFFF; font-size: 14px; }
+.reg .regmain .regcodeinput .inputsend { float: left; width: 100px; height: 30px; line-height: 30px; font-size: 13px; text-align: left; cursor: pointer; }
+.reg .regmain .regcodeinput .inputgray { color: #888888; }
+.reg .regmain .regcodeerror { float: left; margin-left: 150px; margin-top: 3px; width: 234px; height: 18px; color: #DB3962; overflow: hidden; }
+.reg .regmain .regpassinput { float: left; margin-top: 3px; width: 390px; height: 30px; }
+.reg .regmain .regpassinput .inputright { float: left; margin-left: 150px; width: 200px; height: 30px; }
+.reg .regmain .regpassinput .inputright input { width: 150px; padding: 1px 3px; border: none; height: 28px; line-height: 28px; background: #FFFFFF; font-size: 14px; }
+.reg .regmain .regpasserror { float: left; margin-left: 150px; margin-top: 3px; width: 234px; height: 19px; color: #DB3962; overflow: hidden; }
+.reg .regmain .regworderror { float: left; margin-left: 150px; margin-top: 4px; width: 234px; height: 18px; color: #DB3962; overflow: hidden; }
+.reg .regmain .regreaditem { float: left; margin-left: 60px; width: 390px; height: 18px; }
+.reg .regmain .regreaditem .regreadbox { float: left; margin-left: -5px; width: 22px; height: 18px; }
+.reg .regmain .regreaditem .regreadbox input { position: relative; top: -1px; left: 1px; }
+.reg .regmain .regreaditem .regreadleft { float: left; width: 280px; height: 18px; }
+.reg .regmain .regreaderror { float: left; margin-left: 60px; margin-top: -2px; width: 250px; height: 18px; color: #DB3962; overflow: hidden; }
+.reg .regmain .regbutnitem { float: left; margin-left: 60px; width: 301px; height: 38px; background: url(images/regbutn.png) no-repeat; cursor: pointer; }
+.reg .regmain .regiconitem { float: left; margin-left: 50px; margin-top: 36px; width: 315px; height: 75px; text-align: center; }
+.reg .regmain .regiconitem img { margin: 0 9px; border: none; cursor: pointer; }
+
+.login { width: 100%; height: 588px; background: #FBEDEC url(images/login.jpg) no-repeat center center; }
+.login .loginmain { margin: 0 auto; width: 1180px; }
+.login .loginmain .mainright { float: right; width: 518px; height: 588px; }
+.login .loginmain .loginnamehead { float: left; margin-top: 112px; width: 385px; height: 25px; font-size: 14px; text-align: right; }
+.login .loginmain .loginnamehead a { color: #DB3962; }
+.login .loginmain .loginnameinput { float: left; margin-top: 41px; width: 390px; height: 30px; }
+.login .loginmain .loginnameinput input { margin-left: 150px; width: 150px; padding: 1px 3px; border: none; height: 28px; line-height: 28px; background: #FFFFFF; font-size: 14px; }
+.login .loginmain .loginnameerror { float: left; margin-top: 3px; margin-left: 150px; width: 200px; height: 18px; color: #DB3962; }
+.login .loginmain .loginnameerror a { color: #DB3962; }
+.login .loginmain .loginpassinput { float: left; margin-top: 3px; width: 390px; height: 30px; }
+.login .loginmain .loginpassinput input { margin-left: 150px; width: 150px; padding: 1px 3px; border: none; height: 28px; line-height: 28px; background: #FFFFFF; font-size: 14px; }
+.login .loginmain .loginpasserror { float: left; margin-top: 3px; margin-left: 150px; width: 243px; height: 18px; color: #DB3962; }
+.login .loginmain .loginautoitem { float: left; margin-top: 2px; width: 390px; height: 35px; font-size: 14px; }
+.login .loginmain .loginautoitem .loginautobox { float: left; margin-left: 55px; width: 22px; height: 24px; }
+.login .loginmain .loginautoitem .loginautobox input { position: relative; }
+.login .loginmain .loginautoitem .loginautoleft { float: left; width: 192px; height: 24px; }
+.login .loginmain .loginautoitem .loginautoright { float: left; width: 70px; height: 24px; }
+.login .loginmain .loginbutnitem { float: left; margin-left: 60px; width: 321px; height: 41px; background: url(images/loginbutn.png) no-repeat; cursor: pointer; }
+.login .loginmain .loginiconitem { float: left; margin-left: 49px; margin-top: 46px; width: 330px; height: 75px; text-align: center; }
+.login .loginmain .loginiconitem img { margin: 0 9px; border: none; cursor: pointer; }
+
+.forget { width: 100%; background: #F0DDD9 url(images/forget.png) no-repeat center center; }
+.forgetmain { margin: 0 auto; width: 1000px; height: 385px; }
+.forgetmain .forgetitem { float: left; margin-left: 330px; width: 670px; height: 37px; }
+.forgetmain .forgetitem .iteminput { float: left; width: 340px; height: 35px; background: #FFFFFF; }
+.forgetmain .forgetitem .iteminput .inputleft { float: left; padding-left: 15px; width: 75px; height: 35px; line-height: 35px; font-size: 14px; }
+.forgetmain .forgetitem .iteminput .inputright { float: left; width: 220px; margin-top: 2px; }
+.forgetmain .forgetitem .iteminput .inputright input { width: 220px; padding: 1px 3px; border: none; height: 28px; line-height: 28px; background: #FFFFFF; font-size: 14px; }
+.forgetmain .forgetitem .iteminput .inputcode { float: left; width: 105px; height: 30px; }
+.forgetmain .forgetitem .iteminput .inputcode input { width: 85px; padding: 1px 3px; border: none; height: 28px; line-height: 28px; background: #FFFFFF; font-size: 14px; }
+
+.forgetmain .forgetitem .iteminput .inputsend { float: left; margin-top: 2px; width: 141px; height: 29px; line-height: 29px; font-size: 14px; text-align: center; cursor: pointer; background: #EEEEEE; border: 1px solid #cccccc; }
+.forgetmain .forgetitem .iteminput .inputgray { color: #888888; }
+.forgetmain .forgeterror { float: left; margin-left: 420px; width: 580px; height: 20px; line-height: 20px; color: #DB3962; }
+.forgetmain .forgeterror a { color: #DB3962; }
+.forgetmain .forgetsubmit { float: left; margin-left: 330px; width: 338px; height: 34px; line-height: 34px; color: #555555; font-size: 16px; font-weight: bold; cursor: pointer; -moz-border-radius: 2px; border-radius: 2px; background: #F8B7B3; border: 1px solid #F8BBB7; text-align: center; }
+
+.success { width: 100%; background: #F0DDD9 url(images/success.png) no-repeat center center; }
+.successmain { margin: 0 auto; width: 1000px; height: 381px; }
+.successmain .maintohome { float: left; margin-top: 221px; margin-left: 348px; width: 145px; height: 38px; }
+.successmain .maintocart { float: left; margin-top: 221px; margin-left: 12px; width: 145px; height: 38px; }
