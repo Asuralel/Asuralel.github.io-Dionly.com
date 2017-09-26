@@ -11,7 +11,8 @@ require.config({
     
     // 配置短路径（别名）
     paths:{
-        jquery:'../lib/jquery-3.1.1'
+        jquery:'../lib/jquery-3.1.1',
+        common:'requireCommon'
     },
 
     // 配置依赖
@@ -32,7 +33,7 @@ require.config({
         js/
 
  */
-require(['jquery'],function($){
+require(['jquery','common'],function($,com){
     //jquery加载完成后，执行这里的代码
     $(function($){
         $('.footer').load('../index.html #commonfooter',function(){
@@ -47,30 +48,65 @@ require(['jquery'],function($){
         $("#regimgcode").blur(function() {
 
             var code_char = $("#regimgcode").val();
-            console.log(444444)
-            $.ajax({url:"../api/regCheck.php",
-                    async:true,
-            
+
+            $.ajax({
+                type:"POST",
+                url:"../api/regCheck.php",
+                async:true,
+                data:'code_char='+code_char,
                 success:function(msg) {
-                             if (msg == 1) {
-                             console.log("验证码正确！");
-                             } else {
-                             console.log("验证码错误！");
-                             }
-                        }
+                    if (msg == 1) {
+                        $('#regimgcodeerror').css({'color':'green'}).text("验证码正确！").attr('succd',true);
+                    } else {
+                        $('#regimgcodeerror').css({'color':'red'}).text("验证码错误！");
+                    }
+                }
             });
         });
-        //------------------------------------------------------------
+        //------------手机号------------------------------------------------
         $('#regname').on('blur',function(){
             var _phone = $('#regname').val();
             if(!/^1[34578]\d{9}$/.test(_phone)){
-                $('#regnameerror').text("请输入正确的手机号码");
+                $('#regnameerror').css({'color':'red'}).text("请输入正确的手机号码！");
             }
             else{
-                $('#regnameerror').text("手机号码正确");
+                $('#regnameerror').css({'color':'green'}).text("手机号码正确！").attr('succd',true);
+
             }
         })
+        //-------------密码-------------------------------------------------------
+        $('#regpass').on('blur',function(){
+            var regpass = $('#regpass').val();
+            if(!/^(?=.*\d.*)(?=.*[a-zA-Z].*).{6,20}$/.test(regpass)){
+                $('#regpasserror').css({'color':'red'}).text("设置密码为6-20位且包含字母和数字！");
+            }
+            else{
+                $('#regpasserror').css({'color':'green'}).text("密码设置成功！").attr('succd',true);
+            }
+        })
+        $('#regword').on('blur',function(){
+            var regword = $('#regword').val();
+            if(regword!==$('#regpass').val()){
+                $('#regworderror').css({'color':'red'}).text("确认密码与设置密码不一致！");
+            }
+            else{
+                $('#regworderror').css({'color':'green'}).text("确认密码成功！").attr('succd',true);
+            }
+        })
+        //-------------注册成功----------------------------------------------------------
+        $('.regbutnitem').click(function(){
 
+            if($('#regnameerror').attr('succd')&&$('#regimgcodeerror').attr('succd')&&$('#regpasserror').attr('succd')&&$('#regworderror').attr('succd')&&$('#regread')[0].checked){
+                //---------写入账户密码Cookie------
+                var date = new Date();
+                date.setDate(date.getDate()+7);
+                document.cookie = 'username=' + $('#regname').val() + ';expires=' + date.toString() + ';path=/';
+                document.cookie = 'password=' + $('#regpass').val() + ';expires=' + date.toString() + ';path=/';
+                alert("注册成功！");
+                //------跳转-------
+                self.location='../index.html';
+            }
+        })
         
     });
 });

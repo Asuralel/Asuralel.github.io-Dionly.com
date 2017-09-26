@@ -12,7 +12,8 @@ require.config({
 	// 配置短路径（别名）
 	paths:{
 		jquery:'../lib/jquery-3.1.1',
-		bootstrap:'../lib/Bootstrap4/js/bootstrap.min'
+		bootstrap:'../lib/Bootstrap4/js/bootstrap.min',
+        common:'requireCommon'
 	},
 
 	// 配置依赖
@@ -34,13 +35,14 @@ require.config({
 		js/
 
  */
-require(['jquery','bootstrap'],function($,bt){
+require(['jquery','bootstrap','common'],function($,bt,com){
 	//jquery加载完成后，执行这里的代码
 	$(function($){
+		//轮播图
 		$('.carousel').carousel({
 		  interval: 4000
 		})
-
+		//城市图片切换
 		$('#cityareas #city_shenzhen').css({'color':'#8A0003','background':'url(css/images/select.gif)'});
 		$('#cityareas .name').hover(function(){
 			$(this).css({'color':'#8A0003','background':'url(css/images/select.gif)'});
@@ -51,15 +53,14 @@ require(['jquery','bootstrap'],function($,bt){
 		},function(){
 			$(this).css({'color':'#222','background':''});
 		})
-		
+		//返回顶部
 		$('#totops').click(function(){
 			window.scrollTo(0,0);
 		})
-
+		//城市切换窗口弹出
 		$('#qiehuan').click(function(){
 			$('.ZebraDialog').fadeIn();
 			$('.ZebraDialogOverlay').fadeIn();
-			
 			return false;
 		})
 		$('.ZebraDialog_Close').click(function(){
@@ -67,8 +68,21 @@ require(['jquery','bootstrap'],function($,bt){
 			$('.ZebraDialogOverlay').fadeOut();
 			return false;
 		})
-		
-	})
-	
+		//读取Cookie,显示账户名称
+		var cookies = document.cookie;
+		if(cookies.length>0){
+			cookies = cookies.split('; ');
+			cookies.forEach(function(cookie){
+				var temp = cookie.split('=');
+				if(temp[0] === 'username'){
+					$('#username').text(temp[1]+'，');
+					$('#rega').remove();
+					$('#logina').remove();
+				}
+			})
+		}
 
+
+
+	})
 });

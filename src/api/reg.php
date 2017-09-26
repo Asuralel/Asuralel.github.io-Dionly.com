@@ -3,7 +3,7 @@
  * @Author: Marte
  * @Date:   2017-09-25 15:24:44
  * @Last Modified by:   Marte
- * @Last Modified time: 2017-09-25 20:01:02
+ * @Last Modified time: 2017-09-26 19:32:42
  */
     session_start();
     getCode(4,60,33);
@@ -19,8 +19,8 @@
         header("Content-type: image/PNG");
          $im = imagecreate($w, $h);
          $black = imagecolorallocate($im, 0, 9, 0);
-         $gray = imagecolorallocate($im, 200, 180, 200);
-         $bgcolor = imagecolorallocate($im, 225, 235, 195);
+         $gray = imagecolorallocate($im, 200, 170, 180);
+         $bgcolor = imagecolorallocate($im, 125, 235, 195);
      //填充背景
         imagefill($im, 0, 0, $gray);
      //画边框

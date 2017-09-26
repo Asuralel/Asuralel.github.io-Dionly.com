@@ -1,26 +1,16 @@
-<?php
-/**
- * @Author: Marte
- * @Date:   2017-09-25 20:54:57
- * @Last Modified by:   Marte
- * @Last Modified time: 2017-09-25 21:10:22
- */
+<?php 
 
-  header("Content-Type:text/html;charset=utf-8");      //设置头部信息
-  //isset()检测变量是否设置
-  echo "yes";
-  if(isset($_REQUEST['helloweba_num'])){
+  header("Content-Type:text/html;charset=utf-8");
+
+  if(isset($_REQUEST['code_char'])){
     session_start();
-    //strtolower()小写函数
-    if(strtolower($_REQUEST['helloweba_num'])== $_SESSION['helloweba_num']){
-      //跳转页面
-      echo "yes";
+    if(strtolower($_REQUEST['code_char'])== $_SESSION['helloweba_num']){
+      echo "1";
 
     }else{
-      //提示以及跳转页面
-      echo "no";
+      echo "0";
 
     }
     exit();
-  
+  }
 ?>
