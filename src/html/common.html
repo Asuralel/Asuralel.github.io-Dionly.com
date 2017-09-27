@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <title>钻石|钻戒|裸钻|珠宝|钻石定制|钻戒定制_价格-戴欧妮珠宝网</title>
-    <link rel="stylesheet" type="text/css" href="lib/Bootstrap4/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="css/index.css"/>
-    <script src="lib/require.js" data-main="js/index"></script>
-
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <script src="../lib/require.js" data-main="../js/common"></script>  
 </head>
 <body>
     <div id="header">
         <div class="h_container">
             <div class="wrap">
-                <div class="left">您好，<span id="username"></span>欢迎光临戴欧妮珠宝网！ <a href="#"  id="logout" style="display:none;"> &nbsp;注销</a><a href="html/login.html" id="rega"> &nbsp;登录 /</a><a href="html/reg.html" id="logina"> 注册</a>&nbsp;&nbsp;&nbsp;&nbsp;体验中心：<a href="#" target="_blank" class="city">广东·广州分店</a>&nbsp;<a href="" id="qiehuan">切换</a>
+                <div class="left">您好，<span id="username"></span>欢迎光临戴欧妮珠宝网！ <a href="#"  id="logout" style="display:none;"> &nbsp;注销</a><a href="login.html" id="rega"> &nbsp;登录 /</a><a href="reg.html" id="logina"> 注册</a>&nbsp;&nbsp;&nbsp;&nbsp;体验中心：<a href="#" target="_blank" class="city">广东·广州分店</a>&nbsp;<a href="" id="qiehuan">切换</a>
                 </div>
                 <div class="right">
                     <a href="#" class="user">我的戴欧妮</a>
@@ -28,13 +26,13 @@
         </div>
         <div class="header">
             <div class="h_wrap">
-                <div class="logo"><a href="index.html"><img src="images/logo.png" alt="戴欧妮"></a></div>
-                <div class="code"><img src="images/code.png" alt="戴欧妮微信"></div>
+                <div class="logo"><a href="../index.html"><img src="../images/logo.png" alt="戴欧妮"></a></div>
+                <div class="code"><img src="../images/code.png" alt="戴欧妮微信"></div>
                 <div class="main">
                     <div class="search">
                         <div class="input"><input type="text" id="keyword" name="keyword" placeholder="请输入型号或者名称" ></div>
                         
-                        <div class="submit" onclick="SearchDoSubmit();">搜 索</div>
+                        <div class="submit">搜 索</div>
                     </div>
                     <div class="hotkey">
                         <a href="#">永恒</a>
@@ -99,313 +97,17 @@
                         </li>
                     </ul>
                 </div>
-                <div class="home"><a href="index.html">首页</a></div>
+                <div class="home"><a href="../index.html">首页</a></div>
                 <div class="item"><a href="#">裸钻</a></div>
-                <div class="item"><a href="html/goodlist.html">钻戒定制</a></div>
-                <div class="item"><a href="html/goodlist.html">定价产品</a></div>
-                <div class="item"><a href="html/goodlist.html">黄金</a></div>
+                <div class="item"><a href="details.html">钻戒定制</a></div>
+                <div class="item"><a href="details.html">定价产品</a></div>
+                <div class="item"><a href="details.html">黄金</a></div>
                 <div class="item"><a href="#">高端定制</a></div> 
                 <div class="item"><a href="#">珠宝百科</a></div>
-                <div class="phone"><img src="images/phone.png" alt="戴欧妮热线"></div>
+                <div class="phone"><img src="../images/phone.png" alt="戴欧妮热线"></div>
             </div>
         </div>
     </div>
-    <div class="homeslider" style="margin: 0 auto;width: 1263px;">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active" style="height:420px;">
-                  <img class="d-block " src="images/banner1.jpg" height="420" width="1920" alt="First slide" style="position: absolute;left: -328.5px;">
-                </div>
-                <div class="carousel-item" style="height:420px;">
-                  <img class="d-block " src="images/banner2.jpg" height="420" width="1920" alt="Second slide" style="position: absolute;left: -328.5px;">
-                </div>  
-              </div>
-              <a class="carousel-control-prev" href="#" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-            <i class="icon-refresh icon-spin icon-3x "></i>
-    </div>
-    <div class="homeline1">
-        <div class="center"><a target="_blank" href="#"><img src="images/beauty.jpg"><br>最新活动</a></div>
-        <div class="left"><a target="_blank" href="#"><img src="images/sweet.jpg"><br>SWEET 系列产品</a></div>
-        <div class="right"><a target="_blank" href="#"><img src="images/agent.jpg"><br>招商合作</a>
-        </div>
-    </div>
-    <div class="homeline"></div>
-    <div class="homeline2">
-        <div class="leftdiamondimg"><a target="_blank" href="#"><img src="images/leftdiamondimg.png" alt=""></a></div>
-        <div class="rightsearchbtn">
-        <div class="inputvalue">
-            <div class="inputcss">
-                <input type="text" name="mincaratvalue" id="mincaratvalue" value="0.00" class="searchinputcss">
-            </div>
-            <div class="inputline">--</div>
-            <div class="rightinputcss">
-                <input type="text" name="maxcaratvalue" id="maxcaratvalue" value="10.00" class="searchinputcss">
-            </div>
-            <div class="inputtxt">克拉</div>
-        </div>
-        <div class="selectitem" style="margin-top:22px;margin-left:76px;">
-            <div class="imgs" style="padding-left:0;" id="color_1"><img src="images/1.png"></div>
-            <div class="imgs" id="color_2"><img src="images/2.png"></div>
-            <div class="imgs" id="color_3"><img src="images/3.png"></div>
-            <div class="imgs" id="color_4"><img src="images/4.png"></div>
-            <div class="imgs" id="color_5"><img src="images/5.png"></div>
-            <div class="imgs" id="color_6"><img src="images/6.png"></div>
-            <div class="imgs" id="color_7"><img src="images/7.png"></div>
-            <input name="color" type="hidden" id="color" value="">
-        </div>
-        <div class="selectitem">
-            <div class="imgs" style="padding-left:0;"" id="polish_1"><img src="images/11.png"></div>
-            <div class="imgs"" id="polish_2"><img src="images/21.png"></div>
-            <div class="imgs"" id="polish_3"><img src="images/4.png"></div>
-            <div class="imgs"" id="polish_4"><img src="images/41.png"></div>
-            <input name="polish" type="hidden" id="polish" value="">
-        </div>
-        <div class="selectitem">
-            <div class="imgs" style="padding-left:0;" id="clarity_1"><img src="images/1.png"></div>
-            <div class="imgs" id="clarity_2"><img src="images/51.png"></div>
-            <div class="imgs" id="clarity_3"><img src="images/61.png"></div>
-            <div class="imgs" id="clarity_4"><img src="images/71.png"></div>
-            <div class="imgs" id="clarity_5"><img src="images/81.png"></div>
-            <div class="imgs" id="clarity_6"><img src="images/91.png"></div>
-            <input name="clarity" type="hidden" id="clarity" value="">
-
-        </div>
-        <div class="selectitembtn">
-            <div class="imgs" ><img src="images/searchbtn.jpg"></div>
-        </div>
-
-        </div>
-    </div>
-    <div class="homeline"></div>
-    <div class="homeline3">
-        <div class="left">
-            <div class="homeimgs" style="cursor:pointer;" onclick="javascript:window.open('/search.aspx?sclassno=R-A-M&amp;mclassno=D')"></div>
-            <div class="hometype">
-                <div><a target="_blank" href="#">女戒</a></div>
-                <div><a target="_blank" href="#">男戒</a></div>
-                <div><a target="_blank" href="#">对戒</a></div>
-
-            </div>
-            <div class="homeprice">
-                <div><a target="_blank" href="#">1000元以下</a></div>
-                <div><a target="_blank" href="#">1000-1999元</a></div>
-                <div><a target="_blank" href="#">2000-2999元</a></div>
-                <div><a target="_blank" href="#">3000元以上</a></div>
-            </div>
-        </div>
-        <div class="center"><a target="_blank" href="#"><img src="images/2.jpg" alt="最爱女戒" title="最爱女戒"></a></div>
-        <div class="right">
-            <div class="righttop">
-                <div class="righttopleft"><a target="_blank" href="#"><img src="images/3.jpg" alt="玫瑰人生 - DRW070056D"></a></div>
-                <div class="righttopright"><a target="_blank" href="#"><img src="images/4.jpg" alt="缘徊 - DRW070119D"></a></div>
-            </div>
-            <div class="rightbottom">
-                <div class="rightbottomleft"><a target="_blank" href="#"><img src="images/5.jpg" alt="Merry me - DRW070059D"></a></div>
-                <div class="rightbottomcenter"><a target="_blank" href="#"><img src="images/6.jpg" alt="花眸 - DRW010077D"></a></div>
-                <div class="rightbottomright"><a target="_blank" href="#"><img src="images/7.jpg" alt="True love - DRW070058D"></a></div>
-            </div>
-        </div>
-    </div>
-    <div class="homeline"></div>
-    <div class="homeline4">
-        <div><a target="_blank" href="#"><img src="images/41.jpg" alt="白羊座 - CRD012446D"></a></div>
-        <div><a target="_blank" href="#"><img src="images/42.jpg" alt="浪漫心事 - NR0100115D"></a></div>
-        <div><a target="_blank" href="#"><img src="images/43.jpg" alt="天使之约 - DPW012185D"></a></div>
-        <div><a target="_blank" href="#"><img src="images/44.jpg" alt="火焰之心 - CPD011934D"></a></div>
-    </div>
-    <div class="homeline"></div>
-    <div class="homeline5">
-        <div class="left">
-            <div class="homeimgs" style="cursor:pointer;" ></div>
-            <div class="hometype">
-                <div><a target="_blank" href="#">18K</a></div>
-                <div><a target="_blank" href="#">钻石</a></div>
-
-            </div>
-            <div class="homeprice">
-
-                <div><a target="_blank" href="#">3000-5000元</a></div>
-                <div><a target="_blank" href="#">5000元以上</a></div>
-            </div>
-        </div>
-        <div class="center">
-            <div class="centertop">
-                <div class="centertopleft"><a target="_blank" href="#"><img src="images/52.jpg" alt="just you - DCW040083D"></a></div>
-                <div class="centertopright"><a target="_blank" href="#"><img src="images/53.jpg" alt="爱侣 - DCW012627D"></a></div>
-            </div>
-            <div class="centerbottom">
-                <div class="centerbottomleft"><a target="_blank" href="#"><img src="images/54.jpg" alt="Forever - DCW012473D"></a></div>
-                <div class="centerbottomcenter"><a target="_blank" href="#"><img src="images/55.jpg" alt="爱的交织 - DCW012451D"></a></div>
-                <div class="centerbottomright"><a target="_blank" href="#"><img src="images/56.jpg" alt="同心缘 - DCW012571D"></a></div>
-            </div>
-        </div>
-        <div class="right"><a target="_blank" href="#"><img src="images/57.jpg" alt="爱旅 - DAW010117D"></a></div>
-    </div>
-    <div class="homeline"></div>
-    <div class="homeline6">
-        <div class="left">
-            <div class="homeimgs" style="cursor:pointer;" onclick="javascript:window.open('/search.aspx?tclassno=D-R-B-S&amp;mclassno=C')"></div>
-            <div class="hometype">
-                <div><a target="_blank" href="#">碧玺</a></div>
-
-                <div><a target="_blank" href="#">红宝石</a></div>
-                <div><a target="_blank" href="#">蓝宝石</a></div>
-                <div><a target="_blank" href="#">芙蓉石</a></div>
-          </div>
-            <div class="homeprice">
-                <div><a target="_blank" href="#">1000-2000元</a></div>
-                <div><a target="_blank" href="#">2000-3000元</a></div>
-                <div><a target="_blank" href="#">3000-5000元</a></div>
-                <div><a target="_blank" href="#">5000元以上</a></div>
-          </div>
-        </div>
-        <div class="center"><a target="_blank" href="#"><img src="images/62.jpg" alt="久爱 - CRD040084D"></a></div>
-        <div class="right">
-            <div class="righttop">
-                <div class="righttopleft"><a target="_blank" href="#"><img src="images/63.jpg" alt="深爱 - CRD040085D"></a></div>
-                <div class="righttopright"><a target="_blank" href="#"><img src="images/64.jpg" alt="凝望 - CED040086D"></a></div>
-            </div>
-            <div class="rightbottom">
-                <div class="rightbottomleft"><a target="_blank" href="#"><img src="images/65.jpg" alt="提亚的优雅 - CPD011937D"></a></div>
-                <div class="rightbottomcenter"><a target="_blank" href="#"><img src="images/66.jpg" alt="依夕 - CRD012460D"></a></div>
-                <div class="rightbottomright"><a target="_blank" href="#"><img src="images/67.jpg" alt="欲放 - CRD012461D"></a></div>
-            </div>
-        </div>
-    </div>
-    <div class="homeline"></div>
-    <div class="homeline7"><a target="_blank" href="#"><img src="images/71.jpg" alt="加盟商"></a></div>
-    <div class="homeline"></div>
-    <div class="homeline8">
-        <div class="left">
-            <div class="homeimgs" style="cursor:pointer;" onclick="javascript:window.open('/search.aspx?sclassno=P-E&amp;mclassno=P')"></div>
-            <div class="hometype">
-                <div><a target="_blank" href="#">珍珠吊坠</a></div>
-              <div><a target="_blank" href="#">珍珠耳饰</a></div>
-
-            </div>
-            <div class="homeprice">
-                <div><a target="_blank" href="#">1000-2000元</a></div>
-                <div><a target="_blank" href="#">2000-3000元</a></div>
-                <div><a target="_blank" href="#">3000-5000元</a></div>
-                <div><a target="_blank" href="#">5000元以上</a></div>
-            </div>
-        </div>
-        <div class="center">
-            <div class="centertop">
-                <div class="centertopleft"><a target="_blank" href="#"><img src="images/82.jpg" alt="典耀 - PRK102977D"></a></div>
-                <div class="centertopright"><a target="_blank" href="#"><img src="images/83.jpg" alt="满月 - PEW100095D"></a></div>
-            </div>
-            <div class="centerbottom">
-                <div class="centerbottomleft"><a target="_blank" href="#"><img src="images/84.jpg" alt="月韵 - PPW100091D"></a></div>
-                <div class="centerbottomcenter"><a target="_blank" href="#"><img src="images/85.jpg" alt="星意 - PPB100094D"></a></div>
-                <div class="centerbottomright"><a target="_blank" href="#"><img src="images/86.jpg" alt="星月 - PPW100093D"></a></div>
-            </div>
-        </div>
-        <div class="right"><a target="_blank" href="#"><img src="images/87.jpg" alt="明月 - PPW100092D"></a></div>
-    </div>
-    <div class="homeline"></div>
-    <div class="homeline10">
-        <div class="left">
-            <div class="homeimgs" style="cursor:pointer;" onclick="javascript:window.open('/shangpin/huangjin/')"></div>
-            <div class="hometype">
-                <div><a target="_blank" href="#">投资金条</a></div>
-              <div><a target="_blank" href="#">黄金饰品</a></div>
-
-            </div>
-            <div class="homeprice">
-                <div><a target="_blank" href="#">1000元以下</a></div>
-                <div><a target="_blank" href="#">1000-1999元</a></div>
-                <div><a target="_blank" href="#">2000-2999元</a></div>
-                <div><a target="_blank" href="#">3000元以上</a></div>
-            </div>
-        </div>
-        <div class="center">
-            <div class="centertop">
-                <div class="centertopleft"><a target="_blank" href="#"><img src="images/102.jpg" alt="3D黄金吉祥福袋 - GZX092988I"></a></div>
-                <div class="centertopright"><a target="_blank" href="#"><img src="images/103.jpg" alt="3D黄金长命锁吊坠 - GPX092988I"></a></div>
-            </div>
-            <div class="centerbottom">
-                <div class="centerbottomleft"><a target="_blank" href="#"><img src="images/104.jpg" alt="3D黄金锁吊坠 - GPX12I"></a></div>
-                <div class="centerbottomcenter"><a target="_blank" href="#"><img src="images/105.jpg" alt="3D黄金钥匙吊坠 - GPX092988I"></a></div>
-                <div class="centerbottomright"><a target="_blank" href="#"><img src="images/106.jpg" alt="3D黄金小房子转运珠、 - GZX12I"></a></div>
-            </div>
-        </div>
-        <div class="right"><a target="_blank" href="#"><img src="images/107.jpg" alt="3D黄金福羊羊吊坠 - GPX092988I"></a></div>
-    </div>
-    <div class="homeline"></div>
-    <div class="homeline9">
-        <div class="linewrap">
-            <div class="wraphead"><a href="#" target="_blank">最新资讯</a></div>
-            <div class="wrapmain">
-                <div class="mainimg"><img src="images/91.jpg" alt=""></div>
-                <div class="maintext">
-                      
-                    <div>· <a target="_blank" href="#">美国女子商店买蛤蜊吃出罕见紫色珍珠</a></div>
-                    
-                    <div>· <a target="_blank" href="#">世界最大蓝宝石现身斯里兰卡</a></div>
-                    
-                    <div>· <a target="_blank" href="#">黄金首饰材料的分类</a></div>
-                    
-                    <div>· <a target="_blank" href="#">关于蓝宝石不得不知的五个常识</a></div>
-                    
-                    <div>· <a target="_blank" href="#">订婚戒指和结婚戒指的区别</a></div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="linewrap">
-            <div class="wraphead"><a href="#" target="_blank">钻石百科</a></div>
-            <div class="wrapmain">
-                <div class="mainimg"><img src="images/92.jpg" alt=""></div>
-                <div class="maintext">
-                      
-                    <div>· <a target="_blank" href="#">低净度高性价比钻石挑选技巧</a></div>
-                    
-                    <div>· <a target="_blank" href="#">如何才能保证钻石不脱落</a></div>
-                    
-                    <div>· <a target="_blank" href="#">异形公主方形钻石知识了解</a></div>
-                    
-                    <div>· <a target="_blank" href="#">钻石怎么保养能延长寿命？</a></div>
-                    
-                    <div>· <a target="_blank" href="#">挑选好钻石的方法技巧</a></div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="linewrap">
-            <div class="wraphead"><a href="#" target="_blank">婚嫁百科</a></div>
-            <div class="wrapmain">
-                <div class="mainimg"><img src="images/93.jpg" alt=""></div>
-                <div class="maintext">
-                      
-                    <div>· <a target="_blank" href="#">结婚买多大的钻戒比较合适？</a></div>
-                    
-                    <div>· <a target="_blank" href="#">钻石婚戒的挑选 最重要的不在于品牌</a></div>
-                    
-                    <div>· <a target="_blank" href="#">订婚戒指和结婚戒指的区别</a></div>
-                    
-                    <div>· <a target="_blank" href="#">订婚戒指戴哪个手指 订婚戒指怎么戴</a></div>
-                    
-                    <div>· <a target="_blank" href="#">求婚钻戒品牌排行榜 2015求婚钻戒品牌排行榜</a></div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="lineads"><a href="#" target="_blank"><img src="images/94.jpg" alt="花" border="0"></a></div>
-    </div>
-    <div class="homeline"></div>
     <div class="footer">
         <div class="footer">
             <div id="sitefoot_cityshopwrap" class="cityshop">
@@ -433,7 +135,7 @@
                     </div>
                     <div id="info_shenzhen" class="cityhide" style="display: block;">
                         <div class="local"><a href="#" target="_blank">广东·深圳总部</a></div>
-                        <div>广东省深圳市南山区创业路中兴工业城9栋601 </div>
+                        <div>广东省深圳市南山区创业路中兴工业城9栋601<br>周一至周日 9:30-20:00<br>咨询电话：13543256334</div>
                     </div>
                     <div id="info_tianjin" class="cityhide" style="display: none;">
                         <div class="local"><a href="#" target="_blank">天津·天津分店 体验中心</a></div>
@@ -477,7 +179,7 @@
                     </div>
                 </div>
 
-                <div class="shop"><img id="cityshops" src="images/city7.jpg" alt=""></div>
+                <div class="shop"><img id="cityshops" src="../images/city7.jpg" alt=""></div>
             </div>
             <div id="sitefoot_citylinewrap" class="cityline"></div>
             <div id="commonfooter">
@@ -598,12 +300,12 @@
                     <div class="link">友情链接请加QQ：2992936048</div>
                 </div>
                 <ul class="Zxs">
-                    <a href="#"><li><div class="Dbs"><img src="images/sqzx.png" alt=""></div><div class="Fnts">售前客服</div></li></a>
-                    <a href="#"><li><div class="Dbs"><img src="images/sqzx.png" alt=""></div><div class="Fnts">售前客服</div></li></a> 
-                    <a href="#"><li><div class="Dbs"><img src="images/sazx.png" alt=""></div><div class="Fnts">售后咨询</div></li></a> 
-                    <a href="#"><li><div class="Dbs"><img src="images/sazx1.png" alt=""></div><div class="Fnts">加盟咨询</div></li></a>  
-                    <a href="#"><li class="ctv"><div class="Dbs"><img src="images/ewm.png" alt=""></div><div class="Fnts">二维码</div><div class="Eyj" style="display: none;"><img src="images/vm.png" alt="戴欧妮客服"></div></li></a> 
-                    <a><li id="totops"><div class="Dbs"><img src="images/db5.png" alt=""></div><div class="Fnts">返回顶部</div></li></a>
+                    <a href="#"><li><div class="Dbs"><img src="../images/sqzx.png" alt=""></div><div class="Fnts">售前客服</div></li></a>
+                    <a href="#"><li><div class="Dbs"><img src="../images/sqzx.png" alt=""></div><div class="Fnts">售前客服</div></li></a> 
+                    <a href="#"><li><div class="Dbs"><img src="../images/sazx.png" alt=""></div><div class="Fnts">售后咨询</div></li></a> 
+                    <a href="#"><li><div class="Dbs"><img src="../images/sazx1.png" alt=""></div><div class="Fnts">加盟咨询</div></li></a>  
+                    <a href="#"><li class="ctv"><div class="Dbs"><img src="../images/ewm.png" alt=""></div><div class="Fnts">二维码</div><div class="Eyj" style="display: none;"><img src="../images/vm.png" alt="戴欧妮客服"></div></li></a> 
+                    <a><li id="totops"><div class="Dbs"><img src="../images/db5.png" alt=""></div><div class="Fnts">返回顶部</div></li></a>
                 </ul>
                 <div class="ZebraDialogOverlay" style="position: fixed; left: 0px; top: 0px; opacity: 0.5;"></div>
                 <div class="ZebraDialog" style="position: fixed; left: 301.5px; top: 30px; visibility: visible; width: 660px; opacity: 1;">

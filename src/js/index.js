@@ -59,16 +59,18 @@ require(['jquery','bootstrap','common'],function($,bt,com){
 		})
 		//城市切换窗口弹出
 		$('#qiehuan').click(function(){
-			$('.ZebraDialog').fadeIn();
+			$('.ZebraDialog').show().animate({top:60,opacity:1},500);
 			$('.ZebraDialogOverlay').fadeIn();
 			return false;
 		})
 		$('.ZebraDialog_Close').click(function(){
-			$('.ZebraDialog').fadeOut();
+			$('.ZebraDialog').animate({top:30,opacity:0},500,function(){
+				$(this).hide();
+			});
 			$('.ZebraDialogOverlay').fadeOut();
 			return false;
 		})
-		//读取Cookie,显示账户名称
+		//读取Cookie,显示账户名称，隐藏登录注册，显示注销
 		var cookies = document.cookie;
 		if(cookies.length>0){
 			cookies = cookies.split('; ');
@@ -76,12 +78,21 @@ require(['jquery','bootstrap','common'],function($,bt,com){
 				var temp = cookie.split('=');
 				if(temp[0] === 'username'){
 					$('#username').text(temp[1]+'，');
-					$('#rega').remove();
-					$('#logina').remove();
+					$('#logout').show();
+					$('#rega').hide();
+					$('#logina').hide();
 				}
 			})
 		}
-
+		//点击注销，隐藏注销，删除账户名，显示登录注册，清除cookie
+		$('#logout').click(function(){
+			$('#username').text('');
+			$('#logout').hide();
+			$('#rega').show();
+			$('#logina').show();
+			com.cookieRemove('username');
+			com.cookieRemove('password');
+		})
 
 
 	})

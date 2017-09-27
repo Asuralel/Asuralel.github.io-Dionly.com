@@ -176,8 +176,53 @@ define(['jquery'],function($){
 		cookieRemove:function(name){
 			var date = new Date();
 			date.setDate(date.getDate()-10);
-			// document.cookie = name + '=x;expires=' + date.toUTCString();
-			this.set(name,'x',{expires:date.toUTCString()});
+
+			document.cookie = name + '=x;expires=' + date.toUTCString()+ ';path=/';
+
+			// this.set(name,'x',{expires:date.toUTCString()});
+
+		},
+
+		loadFooter:function(){
+			$('.footer').load('common.html .footer',function(){
+			    //城市图片切换
+			    $('#cityareas #city_shenzhen').css({'color':'#8A0003','background':'url(../css/images/select.gif)'});
+			    $('#cityareas .name').hover(function(){
+			        $(this).css({'color':'#8A0003','background':'url(../css/images/select.gif)'});
+			        $(this).siblings().css({'color':'#222','background':''});
+			        $('#sitefoot_cityshopwrap .city .cityhide')[$(this).index()].style.display='block';
+			        $($('#sitefoot_cityshopwrap .city .cityhide')[$(this).index()]).siblings().css({'display':'none'});
+			        $('#cityshops').attr("src",'../images/city'+$(this).index()+'.jpg');
+			    },function(){
+			        $(this).css({'color':'#222','background':''});
+			    })
+
+			    //返回顶部
+			    $('#totops').click(function(){
+			        window.scrollTo(0,0);
+			    })
+			});
+		},
+
+		loadHeader:function(){
+			$('header').load('common.html #header',function(){
+
+			    //城市切换窗口弹出
+			    $('#qiehuan').click(function(){
+			        $('.ZebraDialog').show().animate({top:60,opacity:1},500);
+			        $('.ZebraDialogOverlay').fadeIn();
+			        
+			        return false;
+			    })
+			    $('.ZebraDialog_Close').click(function(){
+			        $('.ZebraDialog').animate({top:30,opacity:0},500,function(){
+        				$(this).hide();
+        			});
+			        $('.ZebraDialogOverlay').fadeOut();
+			        return false;
+			    })
+
+			});
 		}
 	}
 })

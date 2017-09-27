@@ -11,7 +11,7 @@ gulp.task('compileSass',function(){
 	// 查找sass文件
 	// 匹配文件成功后，返回文档流
 	// gulp.src(['./src/sass/*.scss','!./src/sass/var.scss'])
-	gulp.src('./src/sass/*.scss')
+	gulp.src('./src/sass/test.scss')
 
 		// 编译sass文件
 		.pipe(sass({outputStyle:'compact'}).on('error', sass.logError))
@@ -24,7 +24,7 @@ gulp.task('compileSass',function(){
 // 监听sass文件修改
 gulp.task('jtSass',function(){
 	// 监听home.scss文件，如果有修改,则自动自动compileSass任务
-	gulp.watch('./src/sass/*.scss',['compileSass']);
+	gulp.watch('./src/sass/test.scss',['compileSass']);
 });
 
 

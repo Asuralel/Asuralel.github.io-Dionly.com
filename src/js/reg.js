@@ -36,9 +36,16 @@ require.config({
 require(['jquery','common'],function($,com){
     //jquery加载完成后，执行这里的代码
     $(function($){
-        $('.footer').load('../index.html #commonfooter',function(){
+        //------------------加载头部和底部------------------------------------
+        $('.footer').load('common.html #commonfooter',function(){
+            //返回顶部
+            $('#totops').click(function(){
+                window.scrollTo(0,0);
+            })
         });
-        $('header').load('../index.html #header');
+
+        com.loadHeader();
+        //------加载头部底部完成-----------------------------------------------
 
         //---------------------验证码-------------------------------
         $("#getcode_char").click(function() {
@@ -102,9 +109,27 @@ require(['jquery','common'],function($,com){
                 date.setDate(date.getDate()+7);
                 document.cookie = 'username=' + $('#regname').val() + ';expires=' + date.toString() + ';path=/';
                 document.cookie = 'password=' + $('#regpass').val() + ';expires=' + date.toString() + ';path=/';
-                alert("注册成功！");
-                //------跳转-------
-                self.location='../index.html';
+                
+
+
+                $.ajax({
+                    url:"../api/reg2.php",
+                    async:true,
+                    data:'username='+$('#regname').val()+'&password='+$('#regpass').val(),
+                    success:function(msg){
+                        if(msg=='fail'){
+                            alert("手机号码已存在！");
+                        }else{
+                            alert("注册成功！");
+                            // ------跳转-------
+                            self.location='../index.html';
+                        }
+                    }
+                });
+
+
+            }else{
+                alert('请先输入用户信息！');
             }
         })
         

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.container { margin: 0 auto; width: 1180px; }
+.container { margin: 0 auto; width: 1180px; background-color: #fff;}
 
 .h_container { background: #F3F3F3; }
 
@@ -25,7 +25,9 @@
 
 #header .wrap .right .weibo { margin-right: 2px; padding-left: 26px; background: url(../css/images/icon.png) no-repeat 0 -129px; }
 
-#header .header .h_wrap { padding: 5px 0; height: 90px; margin: 0 auto; width: 1180px; overflow: hidden; }
+#header .header{background-color: #fff;}
+
+#header .header .h_wrap { padding: 5px 0; height: 90px; margin: 0 auto; width: 1180px; overflow: hidden;background-color: #fff; }
 
 #header .header .h_wrap .logo { float: left; width: 200px; height: 90px; }
 
@@ -44,6 +46,8 @@
 #header .header .h_wrap .main .hotkey { clear: both; float: left; margin-top: 10px; margin-left: 150px; width: 228px; height: 30px; }
 
 #header .header .h_wrap .main .hotkey a { margin-right: 6px; color: #7D7D7D; }
+
+#header .menuer{background-color: #fff;}
 
 #header .menuer .container { max-width: 1180px; height: 38px; padding: 0; }
 

@@ -11,7 +11,8 @@ require.config({
     
     // 配置短路径（别名）
     paths:{
-        jquery:'../lib/jquery-3.1.1'
+        jquery:'../lib/jquery-3.1.1',
+        common:'requireCommon'
     },
 
     // 配置依赖
@@ -32,12 +33,19 @@ require.config({
         js/
 
  */
-require(['jquery'],function($){
+require(['jquery','common'],function($,com){
     //jquery加载完成后，执行这里的代码
     $(function($){
-        $('.footer').load('../index.html #commonfooter',function(){
+        //------------------加载头部和底部------------------------------------
+        $('.footer').load('common.html #commonfooter',function(){
+            //返回顶部
+            $('#totops').click(function(){
+                window.scrollTo(0,0);
+            })
         });
-        $('header').load('../index.html #header');
+
+        com.loadHeader();
+        //------加载头部底部完成-----------------------------------------------
         //读取Cookie中的账户密码
         var cookies = document.cookie;
         var username;
@@ -75,12 +83,30 @@ require(['jquery'],function($){
         //-------------登录成功----------------------------------------------------------
         $('.loginbutnitem').click(function(){
 
-            if($('#loginnameerror').attr('succd')&&$('#loginpasserror').attr('succd')){
+            // if($('#loginnameerror').attr('succd')&&$('#loginpasserror').attr('succd')){
 
-                alert("登录成功！");
-                //------跳转-------
-                self.location='../index.html';
-            }
+            //     alert("登录成功！");
+            //     //------跳转-------
+            //     self.location='../index.html';
+            // }
+
+
+            $.ajax({
+                url:"../api/login.php",
+                async:true,
+                data:'username='+username+'&password='+password,
+                success:function(msg){
+                    if(msg=='fail'){
+                        alert("手机号码或密码错误！");
+                    }else if(msg=='ok'){
+                        alert("登录成功！");
+                        // ------跳转-------
+                        self.location='../index.html';
+                    }
+                }
+            });
+
+
         })
 
 

@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-26 20:42:56
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-26 21:27:49
+* @Last Modified time: 2017-09-27 10:03:07
 */
 // @配置
 require.config({
@@ -32,60 +32,24 @@ require.config({
  */
 require(['jquery','common'],function($,com){
     //jquery加载完成后，执行这里的代码
+    //获取传递过来的参数
+    var params = location.search;
+    params = decodeURI(params).slice(1).split('&');
+    var res={} ;
+    $(params).each(function(idx,item){
+        res[item.split('=')[0]] = item.split('=')[1];
+    })
+    $('title').text(res.id);
+    
     $(function($){
-
-        //获取传递过来的参数
-        var params = location.search;
-        params = decodeURI(params).slice(1).split('&');
-        var res={} ;
-        $(params).each(function(idx,item){
-            res[item.split('=')[0]] = item.split('=')[1];
-        })
-
-
-        $('title').text(res.id);
-
 
 
 
 
         //------------------加载头部和底部------------------------------------
-        $('.footer').load('../index.html .footer',function(){
-            //城市图片切换
-            $('#cityareas #city_shenzhen').css({'color':'#8A0003','background':'url(../css/images/select.gif)'});
-            $('#cityareas .name').hover(function(){
-                $(this).css({'color':'#8A0003','background':'url(../css/images/select.gif)'});
-                $(this).siblings().css({'color':'#222','background':''});
-                $('#sitefoot_cityshopwrap .city .cityhide')[$(this).index()].style.display='block';
-                $($('#sitefoot_cityshopwrap .city .cityhide')[$(this).index()]).siblings().css({'display':'none'});
-                $('#cityshops').attr("src",'images/city'+$(this).index()+'.jpg');
-            },function(){
-                $(this).css({'color':'#222','background':''});
-            })
-
-            //返回顶部
-            $('#totops').click(function(){
-                window.scrollTo(0,0);
-            })
-        });
-        $('header').load('../index.html #header',function(){
-
-            //城市切换窗口弹出
-            $('#qiehuan').click(function(){
-                $('.ZebraDialog').fadeIn();
-                $('.ZebraDialogOverlay').fadeIn();
-                
-                return false;
-            })
-            $('.ZebraDialog_Close').click(function(){
-                $('.ZebraDialog').fadeOut();
-                $('.ZebraDialogOverlay').fadeOut();
-                return false;
-            })
-
-        });
-        //------加载头部底部完成----------------------------------------------------------
-        
+        com.loadFooter();
+        com.loadHeader();
+        //------加载头部底部完成-----------------------------------------------
 
         
     });
