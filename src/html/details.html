@@ -6,51 +6,43 @@
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../css/index.css" />
     <link rel="stylesheet" type="text/css" href="../css/details.css" />
+    <link rel="stylesheet" type="text/css" href="../css/xzoom.css" />
+
     <script src="../lib/require.js" data-main="../js/details"></script> 
 </head>
 <body>
     <header></header>
 
     <div class="productbody">
-        <div class="productpath"><a href="/">首页</a><span>&gt;</span><a href="/products/">产品</a><span>&gt;</span>My love</div>
+        <div class="productpath"><a href="/">首页</a><span>&gt;</span><a href="/products/">产品</a><span>&gt;</span><a id="productname"></a></div>
         <div class="productmain">
             <div class="productitem">
                 <div class="itemline"></div>
                 <div class="itemleft">
                     <div class="large">
                         <a href="#" title="" id="ui-product-zoom" rel="zoomgallery" style="outline-style: none; text-decoration: none;">
-                            <div class="ui-zoom-pad">
-                                <img src="../images/goods1.png" width="420" height="420" style="opacity: 1;">
-                                <div class="ui-zoom-pup" style="top: 71px; left: -1px; width: 247px;height: 304px; position: absolute; border-width: 1px; display: none;">
-                                </div>
-                                <div class="ui-zoom-window" style="position: absolute; z-index: 5001; left: 435px; top: 0px; display: none;">
-                                    <div class="ui-zoom-wrapper" style="width: 420px;">
-                                        <div class="ui-zoom-wrappertitle" style="width: 100%; position: absolute; display: none;">
-                                        </div>
-                                        <div class="ui-zoom-wrapperimage" style="width: 100%; height: 420px;"><img src="../images/goods10.jpg" height="200" width="200" style="position: absolute; border: 0px; display: block; left: 0px; top: -99.2571px;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ui-zoom-preload" style="visibility: hidden; top: 200px; left: 165px; position: absolute;">Loading
-                                </div>
+                            <div class="ui-zoom-pad xzoom">
+                                <img src="" width="420" height="420" style="opacity: 1;" data-big="../images/goods20.jpg">
+
                             </div>
+                            
                         </a>
                     </div>
                     <div class="small">
                         <div class=" ui-jcarousel-skin">
                             <div class="jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;">
                                  <div class="jcarousel-clip jcarousel-clip-horizontal" style="position: relative;">
-                                    <ul id="ui-product-wrap" class="jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: 0px; width: 488px;">
-                                        <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal" jcarouselindex="1" style="float: left; list-style: none;"><a href="#" class=""><img src="../images/goods12.jpg" width="90" height="90"></a></li>
-                                        <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-2 jcarousel-item-2-horizontal" jcarouselindex="2" style="float: left; list-style: none;"><a href="#" class="ui-zoom-active"><img src="../images/goods12.jpg" width="90" height="90"></a></li>
-                                        <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-3 jcarousel-item-3-horizontal" jcarouselindex="3" style="float: left; list-style: none;"><a href="#" class=""><img src="../images/goods12.jpg" width="90" height="90"></a></li>
-                                        <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-4 jcarousel-item-4-horizontal" jcarouselindex="4" style="float: left; list-style: none;"><a href="#" class=""><img src="../images/goods12.jpg" width="90" height="90"></a></li>
+                                    <ul id="ui-product-wrap" class="jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: absolute; top: 0px; left: -97px; width: 583px;">
+                                        <li class="jcarousel-item jcarousel-item-horizontal" style="float: left;"><a class=""><img src="../images/goods20.jpg" width="90" height="90"></a></li>
+                                        <li class="jcarousel-item jcarousel-item-horizontal" style="float: left;"><a class="ui-zoom-active"><img src="" width="90" height="90"></a></li>
+                                        <li class="jcarousel-item jcarousel-item-horizontal" style="float: left;"><a class=""><img src="../images/goods40.jpg" width="90" height="90"></a></li>
+                                        <li class="jcarousel-item jcarousel-item-horizontal" style="float: left;"><a class=""><img src="../images/goods21.jpg" width="90" height="90"></a></li>
+                                        <li class="jcarousel-item jcarousel-item-horizontal" style="float: left;"><a class=""><img src="../images/goods31.jpg" width="90" height="90"></a></li>
+                                        <li class="jcarousel-item jcarousel-item-horizontal" style="float: left;"><a class=""><img src="../images/goods36.jpg" width="90" height="90"></a></li>
                                     </ul>
                                 </div>
-                                <div class="jcarousel-prev jcarousel-prev-horizontal jcarousel-prev-disabled jcarousel-prev-disabled-horizontal" disabled="disabled" style="display: block;">
-                                </div>
-                                <div class="jcarousel-next jcarousel-next-horizontal" style="display: block;">  
-                                </div>
+                                <div class="jcarousel-prev jcarousel-prev-horizontal"></div>
+                                <div class="jcarousel-next jcarousel-next-horizontal"></div>
                             </div>
                         </div>
                     </div>
@@ -76,7 +68,7 @@
                     
                     <div id="fweight" class="list">
                         <div class="text">副石说明：</div>
-                        <div class="data">钻石&nbsp;数量：18粒&nbsp;&nbsp;重量：0.10克拉&nbsp;&nbsp;净度：SI&nbsp;&nbsp;颜色：I-J&nbsp;&nbsp;切工：</div>
+                        <div class="data">钻石&nbsp;数量：<span></span>粒&nbsp;&nbsp;重量：<span></span>克拉&nbsp;&nbsp;净度：SI&nbsp;&nbsp;颜色：I-J&nbsp;&nbsp;切工：</div>
                     </div>
                     
                     <div id="xclass" class="list">
@@ -235,60 +227,38 @@
                     <div id="hotslist" class="hotslist">
                         <div class="hotsimgs">
                             <a href="/caibao/107/">
-                                <img src="../images/goods15.jpg" height="200" width="200" alt="永恒之心 DRW010625D" title="永恒之心 DRW010625D">
+                                <img src="../images/goods1.jpg" height="200" width="200" alt="永恒之心 DRW010625D" title="永恒之心 DRW010625D">
                             </a>
                         </div>
                         <div class="hotstext"><a href="/caibao/107/">永恒之心</a></div>
                         <div class="hotsimgs">
                             <a href="/caibao/3913/">
-                                <img src="../images/goods15.jpg" alt="花眸 DRW010077D" title="花眸 DRW010077D">
+                                <img src="../images/goods2.jpg" alt="花眸 DRW010077D" title="花眸 DRW010077D">
                             </a>
                         </div>
                         <div class="hotstext"><a href="/caibao/3913/">花眸</a></div>
                         <div class="hotsimgs">
                             <a href="/caibao/3865/">
-                            <img src="../images/goods15.jpg" alt="最爱 DRW010079D" title="最爱 DRW010079D">
+                            <img src="../images/goods3.jpg" alt="最爱 DRW010079D" title="最爱 DRW010079D">
                             </a>
                         </div>
                         <div class="hotstext"><a href="/caibao/3865/">最爱</a></div>
                         <div class="hotsimgs">
                             <a href="/caibao/3861/">
-                            <img src="../images/goods15.jpg" alt="True love DRW070058D" title="True love DRW070058D">
+                            <img src="../images/goods4.jpg" alt="True love DRW070058D" title="True love DRW070058D">
                             </a>
                         </div>
                         <div class="hotstext"><a href="/caibao/3861/">True love</a></div>
                         <div class="hotsimgs">
                             <a href="/caibao/3911/">
-                            <img src="../images/goods15.jpg" alt="缘徊 DRW070119D" title="缘徊 DRW070119D">
+                            <img src="../images/goods5.jpg" alt="缘徊 DRW070119D" title="缘徊 DRW070119D">
                             </a>
                         </div>
                         <div class="hotstext"><a href="/caibao/3911/">缘徊</a></div>
                     </div>
                     <div id="lookhead" class="lefthots">最近浏览记录</div>
                     <div id="looklist" class="hotslist">
-                        <div class="hotsimgs">
-                            <a href="/caibao/107/"><img src="../images/goods15.jpg" alt=""></a>
-                        </div>
-                        <div class="hotstext"><a href="/caibao/107/">永恒之心</a></div>
-                        <div class="hotsim../images/goods15.jpg" alt=""></a>
-                        </div>
-                        <div class="hotstext"><a href="/caibao/978/">金玉良缘</a></div>
-                        <div class="hotsimgs"><a href="/caibao/1667/"><img src="../images/goods15.jpg" alt=""></a></div><div class="hotstext"><a href="/caibao/1667/">花醉</a>
-                        </div>
-                        <div class="hotsimgs"><a href="/caibao/1164/"><img src="../images/goods15.jpg" alt=""></a></div>
-                        <div class="hotstext"><a href="/caibao/1164/">百媚生</a></div>
-                        <div class="hotsimgs"><a href="/caibao/1641/"><img src="../images/goods15.jpg" alt=""></a></div>
-                        <div class="hotstext"><a href="/caibao/1641/">花样</a></div>
-                        <div class="hotsimgs"><a href="/caibao/1173/"><img src="../images/goods15.jpg" alt=""></a></div>
-                        <div class="hotstext"><a href="/caibao/1173/">宠爱</a></div>
-                        <div class="hotsimgs"><a href="/caibao/629/"><img src="../images/goods15.jpg" alt=""></a></div>
-                        <div class="hotstext"><a href="/caibao/629/">爱的絮语</a></div>
-                        <div class="hotsimgs"><a href="/caibao/992/"><img src="../images/goods15.jpg" alt=""></a></div>
-                        <div class="hotstext"><a href="/caibao/992/">盛世</a></div>
-                        <div class="hotsimgs"><a href="/caibao/998/"><img src="../images/goods15.jpg" alt=""></a></div>
-                        <div class="hotstext"><a href="/caibao/998/">雪天使</a></div>
-                        <div class="hotsimgs"><a href="/caibao/1668/"><img src="../images/goods15.jpg" alt=""></a></div>
-                        <div class="hotstext"><a href="/caibao/1668/">镜花缘</a></div>
+                        
                     </div>
                 </div>
                 <div class="contright">
@@ -299,11 +269,11 @@
                     </div>
                     <div id="productcontent">
                         <div class="productlist" id="productlist">
-                            <img src="../images/goods15.jpg" alt="My love DRW124511D" title="My love DRW124511D" style="display: inline;">
-                            <img src="../images/goods15.jpg" alt="My love DRW124511D" title="My love DRW124511D" style="display: inline;">
-                            <img src="../images/goods15.jpg" alt="My love DRW124511D" title="My love DRW124511D" style="display: inline;">
-                            <img src="../images/goods15.jpg" alt="My love DRW124511D" title="My love DRW124511D" style="display: inline;">
-                            <img src="../images/goods15.jpg" alt="My love DRW124511D" title="My love DRW124511D" style="display: inline;">
+                            <img src="../images/goods16.jpg" alt="My love DRW124511D" title="My love DRW124511D" style="display: inline;">
+                            <img src="../images/goods25.jpg" alt="My love DRW124511D" title="My love DRW124511D" style="display: inline;">
+                            <img src="../images/goods35.jpg" alt="My love DRW124511D" title="My love DRW124511D" style="display: inline;">
+                            <img src="../images/goods18.jpg" alt="My love DRW124511D" title="My love DRW124511D" style="display: inline;">
+                            <img src="../images/goods5.jpg" alt="My love DRW124511D" title="My love DRW124511D" style="display: inline;">
                         </div>
                         <div class="productfuwu" id="productfuwu">
                             <strong>权威鉴定证书</strong>

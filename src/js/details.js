@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-26 20:42:56
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-27 10:03:07
+* @Last Modified time: 2017-09-28 21:50:50
 */
 // @配置
 require.config({
@@ -16,7 +16,7 @@ require.config({
 
     // 配置依赖
     shim:{
-       
+       xzoom:['jquery']
     }
 });
 /*
@@ -30,7 +30,7 @@ require.config({
         js/
 
  */
-require(['jquery','common'],function($,com){
+require(['jquery','common','xzoom'],function($,com){
     //jquery加载完成后，执行这里的代码
     //获取传递过来的参数
     var params = location.search;
@@ -39,18 +39,74 @@ require(['jquery','common'],function($,com){
     $(params).each(function(idx,item){
         res[item.split('=')[0]] = item.split('=')[1];
     })
-    $('title').text(res.id);
+    $('title').text(res.name);
     
     $(function($){
-
-
-
-
         //------------------加载头部和底部------------------------------------
         com.loadFooter();
         com.loadHeader();
         //------加载头部底部完成-----------------------------------------------
-
         
+        //设置商品详细信息
+        $('.ui-zoom-pad img').attr({src:res.imgurl});
+        $('.list .bold').text(res.name+'-'+res.identifier);
+        $('#market .market').text(res.price);
+        $('#itemprice').text(res.sale_price);
+        $('#fweight span')[0].innerText=res.diamond_qty;
+        $('#fweight span')[1].innerText=res.weight;
+
+        //-----最近浏览记录----写入商品Cookie------
+        var goodslist = {};
+        goodslist['name']=res.name;
+        goodslist['imgurl']=res.imgurl;
+        var hotgoods=[];
+        if(com.cookieGet('hotgoods').length>0){
+            hotgoods = JSON.parse(com.cookieGet('hotgoods'));
+        }
+        hotgoods.unshift(goodslist);
+
+        var date = new Date();
+        date.setDate(date.getDate()+1);
+        document.cookie = 'hotgoods=' + JSON.stringify(hotgoods) + ';expires=' + date.toString() + ';path=/';
+
+        var store='';
+        $(hotgoods).each(function(idex,item){
+
+            store+=`
+                <div class="hotsimgs"><a href="#"><img src="${item.imgurl}" alt=""></a></div>
+                <div class="hotstext"><a href="#">${item.name}</a></div>
+            `;
+        })
+
+        $('#looklist').html(store);
+        //------------------------------------------------------
+        $('#ui-product-wrap li:nth-child(2) img').attr({src:res.imgurl});
+        $('#productname').text(res.name);
+
+        //----------------------小图操作-------------------------
+        $('.jcarousel-prev').click(function(){
+            var ulleft = $('#ui-product-wrap').css('left');
+            if(parseInt(ulleft)<-97){
+                this.disabled='disabled';
+            }else{
+                $('#ui-product-wrap').animate({left:parseInt(ulleft)-97});  
+            }
+        });
+        $('.jcarousel-next').click(function(){
+            var ulleft = $('#ui-product-wrap').css('left');
+            if(parseInt(ulleft)>-97){
+                this.disabled='disabled';
+            }else{
+                $('#ui-product-wrap').animate({left:parseInt(ulleft)+97});
+            }
+        })
+
+        $('#ui-product-wrap a').click(function(){
+            this.className='ui-zoom-active';
+            $(this).parent().siblings().children().attr({class:''});
+            $('.ui-zoom-pad img').attr({src:this.children[0].src});
+        })
+        $('.ui-zoom-pad img')[0].setAttribute('data-big', res.imgurl);
+        xZoom();
     });
 });

@@ -4,6 +4,7 @@
 	$username = isset($_GET['username']) ? $_GET['username'] : '';
 	$password = isset($_GET['password']) ? $_GET['password'] : '';
 
+
 	// 密码md5加密
 	$password = md5($password);
 
