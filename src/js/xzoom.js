@@ -26,7 +26,7 @@ XZoom.prototype = {
 			position:'right',
 
 			// 大图与小图的间距
-			gap:15,
+			gap:46,
 
 			// 需要实现放大效果的元素
 			ele:'.xzoom'
@@ -56,23 +56,24 @@ XZoom.prototype = {
 		// big.style.height = opt.height + 'px';
 
 		big.appendChild(bigImg);
-
-		smallImg.onload = ()=>{
-			// 大图位置
-			if(opt.position === 'right'){
-				big.style.left = this.ele.offsetLeft + smallImg.offsetWidth + opt.gap + 'px';
-				big.style.top = this.ele.offsetTop + 'px';
-			}else if(opt.position === 'left'){
-				big.style.left = this.ele.offsetLeft - opt.width - opt.gap + 'px';
-				big.style.top = this.ele.offsetTop + 'px';
-			}else if(opt.position === 'top'){
-				big.style.left = this.ele.offsetLeft + 'px';
-				big.style.top = this.ele.offsetTop - opt.height - opt.gap + 'px';
-			}else if(opt.position === 'bottom'){
-				big.style.left = this.ele.offsetLeft + 'px';
-				big.style.top = this.ele.offsetTop + this.ele.offsetHeight + opt.gap + 'px';
-			}
-		}
+		big.style.left = 586 + 'px';
+		big.style.top = 255 + 'px';
+		// smallImg.onload = ()=>{
+		// 	// 大图位置
+		// 	if(opt.position === 'right'){
+		// 		big.style.left = this.ele.offsetLeft + smallImg.offsetWidth + opt.gap + 'px';
+		// 		big.style.top = this.ele.offsetTop + 'px';
+		// 	}else if(opt.position === 'left'){
+		// 		big.style.left = this.ele.offsetLeft - opt.width - opt.gap + 'px';
+		// 		big.style.top = this.ele.offsetTop + 'px';
+		// 	}else if(opt.position === 'top'){
+		// 		big.style.left = this.ele.offsetLeft + 'px';
+		// 		big.style.top = this.ele.offsetTop - opt.height - opt.gap + 'px';
+		// 	}else if(opt.position === 'bottom'){
+		// 		big.style.left = this.ele.offsetLeft + 'px';
+		// 		big.style.top = this.ele.offsetTop + this.ele.offsetHeight + opt.gap + 'px';
+		// 	}
+		// }
 
 
 		// 生成放大镜
@@ -151,8 +152,8 @@ XZoom.prototype = {
 		// }
 	},
 	hide:function(){
-		// this.big.parentNode.removeChild(this.big);
-		// this.zoom.parentNode.removeChild(this.zoom);
+		this.big.parentNode.removeChild(this.big);
+		this.zoom.parentNode.removeChild(this.zoom);
 	}
 
 }

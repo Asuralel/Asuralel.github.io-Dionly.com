@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-07-26 19:09:03
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-25 12:02:32
+* @Last Modified time: 2017-09-29 10:24:16
 */
 @charset "utf-8";
 /* CSS Document */
@@ -17,7 +17,7 @@ ul,li,ol{ list-style: none; }
 fieldset,img{border:0;vertical-align: bottom;}
 img{text-align: center;}
 em, cite, address,i { font-style: normal; font-weight: normal; }
-a { text-decoration: none; color: #222; background: none; }
+a { text-decoration: none; color: #222; background: none; cursor:pointer;}
 a:hover{color: #DB3962;text-decoration: none;}
 input { outline:none; border:none; }
 input::-ms-clear { display:none; }

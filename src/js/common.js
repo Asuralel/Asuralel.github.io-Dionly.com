@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-27 09:07:30
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-27 10:44:27
+* @Last Modified time: 2017-09-29 17:26:00
 */
 // @配置
 require.config({
@@ -91,6 +91,7 @@ require(['jquery','common'],function($,com){
                 com.cookieRemove('password');
             })
 
+            
         
     });
 });

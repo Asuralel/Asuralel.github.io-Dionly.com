@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-26 14:31:39
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-26 15:42:46
+* @Last Modified time: 2017-09-29 15:20:40
 */
 .productmain { clear: both; width: 100%; height: 195px; background: #F3F3F3; }
 .productmain .wrap { margin: 0 auto; width: 1180px; height: 195px; overflow: hidden; }
@@ -44,7 +44,7 @@
 .productlist .listright .listselect .selectwrap .wrapitem .w050 { float: left; width: 50px; }
 .productlist .listright .listselect .selectwrap .wrapitem .w055 { float: left; width: 55px; }
 .productlist .listright .listselect .selectwrap .wrapitem .w070 { float: left; width: 70px; }
-.productlist .listright .listselect .selectwrap .wrapitem .w080 { float: left; width: 80px; }
+.productlist .listright .listselect .selectwrap .wrapitem .w080 { float: left; width: 66px; }
 .productlist .listright .listselect .selectwrap .wrapitem .w250 { float: left; width: 250px; }
 .productlist .listright .listselect .selectwrap .wrapitem .select { float: left; margin-right: 10px; margin-top: 7px; padding: 0 8px; line-height: 26px; color: #FFFFFF; background: #DB3962; }
 .productlist .listright .listselect .selectwrap .wrapitem .select a { background-color:#fff;}
@@ -70,8 +70,8 @@
 .productlist .listright .listpager a { margin: 0 5px; padding: 5px 8px; font-size: 12px; border: solid 1px #D2D2D2; background: #EEEEEE; }
 .productlist .listright .listpager a:hover { text-decoration: none; background: #D8D8D8; }
 .productlist .listright .listpager span { margin: 0 5px; padding: 0 8px; }
-.productlist .listright .listpager span.m { padding: 2px; }
-.productlist .listright .listpager span.c { padding: 5px 8px; border: solid 1px #D2D2D2; background: #D8D8D8; }
+.productlist .listright .listpager .m { padding: 2px; }
+.productlist .listright .listpager .c { padding: 5px 8px; border: solid 1px #D2D2D2; background: #D8D8D8; }
 .munuclass_none { display:none;}
 .showsearchkey { color:#fa773e;font-weight:bold;}
 .selectedalink { color:red;font-weight:bold;}

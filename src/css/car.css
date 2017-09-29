@@ -1,0 +1,90 @@
+/* 
+* @Author: Marte
+* @Date:   2017-09-29 19:06:52
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-09-29 21:17:17
+*/
+body { margin: 0; padding: 0; font: 12px "microsoft yahei"; color: #222222; background: #FEF1EF; }
+
+.cartbody { margin: 20px auto; width: 1180px; overflow:hidden;}
+.cartbody .bodywrap { float: left; width: 1180px; border: 1px solid #DEDEDE; background: #FFFFFF; }
+.cartbody .bodywrap .wraphead { padding: 10px 20px 0 20px; width: 1140px; height: 40px; border-top: 3px solid #FFC0C1; }
+.cartbody .bodywrap .wraphead .headwrap { width: 1140px; height: 40px; line-height: 40px; border-bottom: 1px solid #DEDEDE; font-weight: bold; text-indent: 30px; background: url(images/carticon.jpg) no-repeat left center; }
+.cartbody .bodywrap .wrapmain { padding: 10px 20px; width: 1140px; }
+.cartbody .bodywrap .wrapmain table { float: left; margin: 0; padding: 0; width: 100%; border: none; border-collapse: collapse; }
+.cartbody .bodywrap .wrapmain table tr.headrow { height: 30px; line-height: 30px; }
+.cartbody .bodywrap .wrapmain table tr.product { background: #F7F7F7; }
+.cartbody .bodywrap .wrapmain table td { padding: 5px; text-align: center; }
+.cartbody .bodywrap .wrapmain table td.img { width: 110px; }
+.cartbody .bodywrap .wrapmain table td.qty { width: 100px; }
+.cartbody .bodywrap .wrapmain table td.weight { width: 100px; }
+.cartbody .bodywrap .wrapmain table td.word { width: 150px; }
+.cartbody .bodywrap .wrapmain table td.price { width: 100px; }
+.cartbody .bodywrap .wrapmain table td.action { width: 100px; }
+.cartbody .bodywrap .wrapmain table td.action .button { padding: 4px 8px; border: 1px solid #C6C6C6; background: #E5E5E5; cursor: pointer; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.cartbody .bodywrap .wrapmain .mainstat { clear: both; float: left; margin: 10px 0; padding: 0; width: 1140px; height: 40px; background: #F7F7F7; }
+.cartbody .bodywrap .wrapmain .mainstat .statleft { float: left; width: 400px; height: 40px; line-height: 40px; }
+.cartbody .bodywrap .wrapmain .mainstat .statleft a.gobuy { margin: 0 20px; color: #DB3962; }
+.cartbody .bodywrap .wrapmain .mainstat .statleft #totalcount {  margin: 0 5px; font-weight: bold; color: #C11E1F;}
+.cartbody .bodywrap .wrapmain .mainstat .statright { float: right; width: 740px; height: 40px; line-height: 40px; text-align: right; }
+.cartbody .bodywrap .wrapmain .mainstat .statright .price { margin: 0 15px; }
+.cartbody .bodywrap .wrapmain .mainstat .statright #totalmoney {  margin: 0 5px; font-size:16px; font-weight: bold; color: #C11E1F; }
+.cartbody .bodywrap .wrapmain .mainstat .statright .button { margin: 0 15px; padding: 4px 25px; color: #FFFFFF;   cursor: pointer; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.cartbody .bodywrap .wrapmain .mainbutn { clear: both; float: left; margin: 10px 0; padding: 0; width: 1140px; height: 40px; text-align: right; }
+.cartbody .bodywrap .wrapmain .mainbutn .button { margin: 0; padding: 6px 30px; color: #FFFFFF; border: 1px solid #CC494B; background: #CC494B; font-size: 16px; cursor: pointer; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.cartbody .bodywrap .wrapmain  .button img {vertical-align: middle;}
+.cartbody .bodywrap .wrapmain .mainnone { float: left; width: 1178px; height: 446px; background: url(images/cartnone.jpg) no-repeat; }
+.cartbody .bodywrap .wrapmain .mainnone .nonetext { float: left; margin-left: 600px; margin-top: 100px; padding: 5px 10px; width: 300px; line-height: 30px; border: 1px solid #DEDEDE; background: #FFFAF9; }
+
+.carthots { width: 100%; padding: 20px 0; background: #FFFFFF; }
+.carthots .hotswrap { margin: 0 auto; width: 1180px; }
+.carthots .hotswrap .wraphead { padding: 0 10px; width: 1160px; height: 34px; background: url(images/hotbg.png); border-top: 1px solid #DEDEDE; border-bottom: 1px solid #DEDEDE; }
+.carthots .hotswrap .wraphead .headleft { float: left; width: 300px; height: 34px; line-height: 34px; font-weight: bold; text-indent: 25px; background: url(images/lovebg.png) no-repeat left center; }
+.carthots .hotswrap .wraphead .headright { float: right; padding-right: 5px; width: 300px; height: 34px; line-height: 34px; text-align: right; }
+.carthots .hotswrap .wrapmain { margin-top: 10px; padding: 20px 10px; width: 1158px; height: 200px; border: 1px solid #DEDEDE; }
+.carthots .hotswrap .wrapmain .mainleft { float: left; width: 29px; height: 175px; background: url(images/hotleft.png) no-repeat center center; }
+.carthots .hotswrap .wrapmain .maincenter { float: left;text-align: center;margin-left: 5px; visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; width: 1092px;}
+.carthots .hotswrap .wrapmain .maincenter ul { margin: 0px; padding: 0px; position: relative; list-style: none; z-index: 1; width: 3276px; }
+.carthots .hotswrap .wrapmain .maincenter ul li { overflow: hidden; float: left; width: 182px; height: 198px; }
+.carthots .hotswrap .wrapmain .maincenter ul li img {height:182px; }
+
+.carthots .hotswrap .wrapmain .mainright { float: right; width: 29px; height: 175px; background: url(images/hotright.png) no-repeat center center; }
+
+.carthead { float: left; padding-top: 5px; width: 1140px; height: 35px; line-height: 35px; border-bottom: 1px dashed #CCCCCC; }
+.carthead .headtext { float: left; width: 1140px; text-align: left; text-indent: 23px; font-weight: bold; color: #DB3962; }
+
+.cartwrap { float: left; padding: 5px 0; width: 1140px; }
+.cartwrap .wrapitem { float: left; padding-left: 20px; width: 1120px; height: 30px; line-height: 20px; }
+.cartwrap .wrapitem .radio { position: relative; top: 1px; left: -2px; }
+
+.cartinfo { float: left; padding: 5px 0; width: 1140px; }
+.cartinfo .infoitem { float: left; padding-left: 40px; width: 1100px; height: 38px; line-height: 20px; }
+.cartinfo .infoitem .w200 { width: 220px; padding: 1px 3px; border: 1px solid #CCCCCC; height: 24px; line-height: 24px; font-size: 14px; }
+.cartinfo .infoitem .w208 { margin-right: 5px; padding: 1px 1px 1px 0; height: 28px; line-height: 28px; font-size: 14px; border: 1px solid #CCCCCC; }
+.cartinfo .infoitem .w500 { width: 500px; padding: 1px 3px; border: 1px solid #CCCCCC; height: 24px; line-height: 24px; font-size: 14px; }
+.cartinfo .infotext { float: left; padding: 25px 0 35px 0; width: 1140px; line-height: 30px; text-align: center; }
+.cartinfo .infotext .order { color: red; font-weight: bold; font-size: 16px; }
+.cartinfo .infotext .money { color: red; font-weight: bold; font-size: 16px; padding-right: 5px; }
+.cartinfo .infotext .consult { color: red; }
+.cartinfo .infotext .payonline { width: 1120px; margin-top: 20px; padding-top: 40px; background: #EDEDED; }
+.cartinfo .infotext .payonline img { position: relative; top: 5px; padding-right: 5px; }
+.cartinfo .infotext .payment { margin-left: 2px; margin-right: 4px; padding: 10px 30px; font-size: 20px; font-weight: bold; color: #ffffff; background: #C11E1F; cursor: pointer; position: relative; top: 3px; }
+.cartinfo .infotext .paymen:hover { color: #FE7C02; }
+
+.cartbank { float: left; padding: 0 0 8px 23px; width: 1100px; }
+.cartbank ul { float: left; clear: both; width: 1100px; padding: 0; margin: 0; padding-left: 17px; }
+.cartbank ul li { float: left; height: 36px; padding-top: 7px; width: 180px; background: #FFFFFF; border: 1px solid #ccc; margin: 3px 22px 7px 0; list-style: none; }
+.cartbank ul li.qiye { width: 240px; }
+.cartbank ul li img { margin-top: 4px; margin-left: 4px; }
+.cartbank ul li input { position: relative; top: -5px; }
+.cartbank ul li.button { padding-top: 18px; width: 270px; border: none; }
+.cartbank ul li .payment { margin-top: 10px; padding: 10px 32px; font-size: 20px; font-weight: bold; color: #ffffff; background: #C11E1F; cursor: pointer; }
+.cartbank ul li .paymen:hover { color: #FE7C02; }
+
+.carthang { float: left; padding: 2px 0 8px 0; width: 998px; border-left: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC; font-size: 14px; }
+.carthang ul { margin: 0 5px; width: 998px; }
+.carthang ul li { float: left; width: 900px; padding: 0 0 10px 4px; margin-left: 6px; }
+.carthang ul li span { width: 150px; float: left; padding: 0; color: #666; }
+.carthang ul li em { width: 110px; float: left; padding: 0; color: #666; }
+.carthang ul li strong { width: 250px; float: left; padding: 0; font-weight: normal; color: #666; }
+.carthang ul li b { float: left; padding: 0; text-indent: 6px; text-align: left; margin: 0; font-weight: normal; color: #666; }

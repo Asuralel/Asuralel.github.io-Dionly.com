@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-26 20:42:56
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-28 21:50:50
+* @Last Modified time: 2017-09-29 20:56:01
 */
 // @配置
 require.config({
@@ -100,13 +100,53 @@ require(['jquery','common','xzoom'],function($,com){
                 $('#ui-product-wrap').animate({left:parseInt(ulleft)+97});
             }
         })
-
+        $('.ui-zoom-pad img')[0].setAttribute('data-big', res.imgurl);
         $('#ui-product-wrap a').click(function(){
             this.className='ui-zoom-active';
             $(this).parent().siblings().children().attr({class:''});
             $('.ui-zoom-pad img').attr({src:this.children[0].src});
+            $('.ui-zoom-pad img')[0].setAttribute('data-big', this.children[0].src);
+            xZoom();
         })
-        $('.ui-zoom-pad img')[0].setAttribute('data-big', res.imgurl);
+        
         xZoom();
+
+        // 点击加入购物车，用cookie写入
+        $('.addtocart_zuan').click(function(){
+            var cookie = com.cookieGet('cargoods');
+            var carlist=[];
+            if(cookie.length>0){
+                carlist = JSON.parse(cookie);
+            }
+
+            var has = false;
+            for(var i=0;i<carlist.length;i++){
+                // 已经存在
+                if(carlist[i].name === res.name){
+                    carlist[i].qty++;
+                    has=true;
+                    break;
+                }
+            }
+
+            // 不存在
+            if(!has){
+                var goods = {
+                    name:res.name,
+                    imgurl:res.imgurl,
+                    identifier:res.identifier,
+                    price:res.price,
+                    sale_price:res.sale_price,
+                    weight:res.weight,
+                    qty:1
+                }
+
+                carlist.push(goods);
+            }
+
+            var date = new Date();
+            date.setDate(date.getDate()+1);
+            document.cookie = 'cargoods=' + JSON.stringify(carlist) + ';expires=' + date.toString() + ';path=/';
+        })
     });
 });
