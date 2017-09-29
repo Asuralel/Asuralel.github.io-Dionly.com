@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2017-09-29 12:07:15
+Date: 2017-09-29 21:45:02
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -31,7 +31,7 @@ CREATE TABLE `goods` (
   `type` varchar(255) CHARACTER SET utf8 DEFAULT NULL COMMENT '商品类型',
   `add_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=70 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of goods
@@ -76,6 +76,35 @@ INSERT INTO `goods` VALUES ('37', '心之魅影', 'DMW532918D', '1668.00', '1228
 INSERT INTO `goods` VALUES ('38', '比翼', 'DMW533918D', '1568.00', '1128.00', '../images/goods39.jpg', '4', '0.24', '耳饰', '2017-09-29 11:04:25');
 INSERT INTO `goods` VALUES ('39', '恋恋花情', 'DMW533918D', '1558.00', '1157.00', '../images/goods40.jpg', '4', '0.24', '耳饰', '2017-09-29 11:04:28');
 INSERT INTO `goods` VALUES ('40', '一心一意项链', 'DMW533218D', '1558.00', '1157.00', '../images/goods41.jpg', '56', '1.24', '项链/链牌', '2017-09-29 11:05:40');
+INSERT INTO `goods` VALUES ('41', '心魅', 'DRW010277D', '8518.00', '4516.00', '../images/goods42.jpg', '38', '0.36', '女戒', '2017-09-29 16:26:43');
+INSERT INTO `goods` VALUES ('42', '爱的真谛', 'DRW010277D', '6568.00', '3516.00', '../images/goods43.jpg', '38', '0.36', '女戒', '2017-09-29 16:27:22');
+INSERT INTO `goods` VALUES ('43', '情有独钟', 'DRW010677D', '4568.00', '1516.00', '../images/goods44.jpg', '58', '0.46', '女戒', '2017-09-29 16:27:56');
+INSERT INTO `goods` VALUES ('44', '执爱', 'DRW010677D', '6568.00', '4516.00', '../images/goods45.jpg', '58', '0.46', '女戒', '2017-09-29 16:28:20');
+INSERT INTO `goods` VALUES ('45', '奢华情调', 'DRW010677D', '8568.00', '6546.00', '../images/goods46.jpg', '84', '0.56', '女戒', '2017-09-29 16:28:57');
+INSERT INTO `goods` VALUES ('46', '满心欢喜', 'DRW010677D', '4568.00', '3546.00', '../images/goods47.jpg', '84', '0.56', '女戒', '2017-09-29 16:29:19');
+INSERT INTO `goods` VALUES ('47', '魅力狂想', 'DRW010677D', '7568.00', '4146.00', '../images/goods48.jpg', '84', '0.56', '女戒', '2017-09-29 16:29:40');
+INSERT INTO `goods` VALUES ('48', '真爱印记', 'DRW010677D', '7368.00', '4046.00', '../images/goods49.jpg', '24', '0.56', '女戒', '2017-09-29 16:30:04');
+INSERT INTO `goods` VALUES ('49', '花团锦簇', 'DRW610677D', '5368.00', '3046.00', '../images/goods50.jpg', '24', '0.36', '女戒', '2017-09-29 16:30:30');
+INSERT INTO `goods` VALUES ('50', '相伴一生', 'DRW610677D', '3368.00', '2046.00', '../images/goods51.jpg', '24', '0.36', '女戒', '2017-09-29 16:30:55');
+INSERT INTO `goods` VALUES ('51', '甜秀', 'DRW610677D', '3268.00', '2026.00', '../images/goods52.jpg', '24', '0.36', '女戒', '2017-09-29 16:31:14');
+INSERT INTO `goods` VALUES ('52', '境界', 'DRW610677D', '8968.00', '4626.00', '../images/goods53.jpg', '24', '0.56', '男戒', '2017-09-29 17:07:26');
+INSERT INTO `goods` VALUES ('53', '爱的美味', 'DRW610677D', '8668.00', '4426.00', '../images/goods54.jpg', '24', '0.56', '男戒', '2017-09-29 17:07:46');
+INSERT INTO `goods` VALUES ('54', '完美主义', 'DRW610677D', '8368.00', '4726.00', '../images/goods55.jpg', '24', '0.56', '男戒', '2017-09-29 17:08:08');
+INSERT INTO `goods` VALUES ('55', '简约主义', 'DRW610677D', '9368.00', '6726.00', '../images/goods56.jpg', '24', '0.56', '男戒', '2017-09-29 17:08:27');
+INSERT INTO `goods` VALUES ('56', '喜悦跳动', 'DRW610677D', '9368.00', '6426.00', '../images/goods57.jpg', '24', '0.56', '男戒', '2017-09-29 17:08:41');
+INSERT INTO `goods` VALUES ('57', '致爱', 'DRW610677D', '7668.00', '4426.00', '../images/goods58.jpg', '24', '0.56', '男戒', '2017-09-29 17:09:01');
+INSERT INTO `goods` VALUES ('58', '流金岁月', 'DRW610677D', '7168.00', '3426.00', '../images/goods59.jpg', '24', '0.56', '男戒', '2017-09-29 17:09:20');
+INSERT INTO `goods` VALUES ('59', '爱的畅想', 'DRW610677D', '6168.00', '3726.00', '../images/goods60.jpg', '24', '0.56', '男戒', '2017-09-29 17:09:39');
+INSERT INTO `goods` VALUES ('60', '超级至尊', 'DRW610677D', '5868.00', '2726.00', '../images/goods61.jpg', '24', '0.56', '男戒', '2017-09-29 17:09:58');
+INSERT INTO `goods` VALUES ('61', '王者风范', 'DRW610677D', '5468.00', '2626.00', '../images/goods62.jpg', '24', '0.56', '男戒', '2017-09-29 17:10:17');
+INSERT INTO `goods` VALUES ('62', '心的港湾', 'DRW610677D', '5468.00', '2226.00', '../images/goods63.jpg', '24', '0.56', '男戒', '2017-09-29 17:10:31');
+INSERT INTO `goods` VALUES ('63', '唯美骑士', 'DRW610677D', '5468.00', '2826.00', '../images/goods64.jpg', '24', '0.56', '男戒', '2017-09-29 17:10:49');
+INSERT INTO `goods` VALUES ('64', '爱的甜点', 'DRW610677D', '3468.00', '1826.00', '../images/goods65.jpg', '24', '0.56', '男戒', '2017-09-29 17:11:04');
+INSERT INTO `goods` VALUES ('65', '名士人生', 'DRW610677D', '3468.00', '1926.00', '../images/goods66.jpg', '35', '0.33', '男戒', '2017-09-29 17:11:49');
+INSERT INTO `goods` VALUES ('66', '雅人深致', 'DRW610677D', '3468.00', '1826.00', '../images/goods67.jpg', '35', '0.33', '男戒', '2017-09-29 17:12:05');
+INSERT INTO `goods` VALUES ('67', '至尊男人', 'DRW610677D', '3468.00', '1816.00', '../images/goods68.jpg', '35', '0.33', '男戒', '2017-09-29 17:12:24');
+INSERT INTO `goods` VALUES ('68', '爱情本色', 'DRW610677D', '3468.00', '1416.00', '../images/goods69.jpg', '35', '0.33', '男戒', '2017-09-29 17:12:38');
+INSERT INTO `goods` VALUES ('69', '只要有你', 'DRW610677D', '3468.00', '2416.00', '../images/goods70.jpg', '35', '0.33', '男戒', '2017-09-29 17:12:51');
 
 -- ----------------------------
 -- Table structure for user
