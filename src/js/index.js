@@ -38,6 +38,23 @@ require.config({
 require(['jquery','bootstrap','common'],function($,bt,com){
 	//jquery加载完成后，执行这里的代码
 	$(function($){
+		//----------获取购物车商品信息，并显示个数----------------
+		var res = '';
+		var cookies = document.cookie;
+		if(cookies.length>0){
+			cookies = cookies.split('; ');
+			cookies.forEach(function(cookie){
+				var temp = cookie.split('=');
+				if(temp[0] === 'cargoods'){
+					res = temp[1];
+				}
+			})
+		}
+		var cartnumber=[];
+		if(res.length>0){
+			cartnumber = JSON.parse(res);
+		}
+		$('#sitehead_cartnumber').text(cartnumber.length);
 		//轮播图
 		$('.carousel').carousel({
 		  interval: 4000

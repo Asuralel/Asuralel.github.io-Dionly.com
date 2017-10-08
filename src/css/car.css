@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-29 19:06:52
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-29 21:17:17
+* @Last Modified time: 2017-10-08 18:31:42
 */
 body { margin: 0; padding: 0; font: 12px "microsoft yahei"; color: #222222; background: #FEF1EF; }
 
@@ -20,6 +20,9 @@ body { margin: 0; padding: 0; font: 12px "microsoft yahei"; color: #222222; back
 .cartbody .bodywrap .wrapmain table td.weight { width: 100px; }
 .cartbody .bodywrap .wrapmain table td.word { width: 150px; }
 .cartbody .bodywrap .wrapmain table td.price { width: 100px; }
+.cartbody .bodywrap .wrapmain table td.unprice { width: 100px; }
+.cartbody .bodywrap .wrapmain table td.deprice { width: 100px; }
+.cartbody .bodywrap .wrapmain table td.sale_price { width: 100px; }
 .cartbody .bodywrap .wrapmain table td.action { width: 100px; }
 .cartbody .bodywrap .wrapmain table td.action .button { padding: 4px 8px; border: 1px solid #C6C6C6; background: #E5E5E5; cursor: pointer; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
 .cartbody .bodywrap .wrapmain .mainstat { clear: both; float: left; margin: 10px 0; padding: 0; width: 1140px; height: 40px; background: #F7F7F7; }
@@ -43,8 +46,8 @@ body { margin: 0; padding: 0; font: 12px "microsoft yahei"; color: #222222; back
 .carthots .hotswrap .wraphead .headright { float: right; padding-right: 5px; width: 300px; height: 34px; line-height: 34px; text-align: right; }
 .carthots .hotswrap .wrapmain { margin-top: 10px; padding: 20px 10px; width: 1158px; height: 200px; border: 1px solid #DEDEDE; }
 .carthots .hotswrap .wrapmain .mainleft { float: left; width: 29px; height: 175px; background: url(images/hotleft.png) no-repeat center center; }
-.carthots .hotswrap .wrapmain .maincenter { float: left;text-align: center;margin-left: 5px; visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; width: 1092px;}
-.carthots .hotswrap .wrapmain .maincenter ul { margin: 0px; padding: 0px; position: relative; list-style: none; z-index: 1; width: 3276px; }
+.carthots .hotswrap .wrapmain .maincenter { float: left;text-align: center;margin-left: 5px; visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; width: 1092px;height:198px;}
+.carthots .hotswrap .wrapmain .maincenter ul { margin: 0px; padding: 0px; position: absolute; list-style: none; z-index: 1; width: 3276px;height:198px; }
 .carthots .hotswrap .wrapmain .maincenter ul li { overflow: hidden; float: left; width: 182px; height: 198px; }
 .carthots .hotswrap .wrapmain .maincenter ul li img {height:182px; }
 

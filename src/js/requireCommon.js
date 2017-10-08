@@ -222,7 +222,23 @@ define(['jquery'],function($){
 			        return false;
 			    })
 
-
+			    //----------获取购物车商品信息，并显示个数----------------
+			    var res = '';
+			    var cookies = document.cookie;
+			    if(cookies.length>0){
+			    	cookies = cookies.split('; ');
+			    	cookies.forEach(function(cookie){
+			    		var temp = cookie.split('=');
+			    		if(temp[0] === 'cargoods'){
+			    			res = temp[1];
+			    		}
+			    	})
+			    }
+			    var cartnumber=[];
+			    if(res.length>0){
+			    	cartnumber = JSON.parse(res);
+			    }
+			    $('#sitehead_cartnumber').text(cartnumber.length);
 
 
 			});

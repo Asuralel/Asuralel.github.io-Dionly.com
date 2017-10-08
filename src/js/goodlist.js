@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-26 14:32:18
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-29 20:01:48
+* @Last Modified time: 2017-10-08 16:02:46
 */
 // @配置
 require.config({
@@ -101,8 +101,12 @@ require(['jquery','common'],function($,com){
                         if(pageNo>Math.ceil(msg.total/msg.qty)){
                             pageNo=1;
                         }
+                        $('#toppagelists').children()[pageNo].className='c';
+                        $($('#toppagelists').children()[pageNo]).siblings().attr({class:''});
                     }else{
-                        pageNo=text;              
+                        pageNo=text;
+                        this.className='c';
+                        $(this).siblings().attr({class:''});             
                     }
 
                     $.ajax({url:'../api/goodslist.php',
@@ -137,8 +141,12 @@ require(['jquery','common'],function($,com){
                             if(pageNo>Math.ceil(msg.total/msg.qty)){
                                 pageNo=1;
                             }
+                            $('#toppagelists').children()[pageNo].className='c';
+                            $($('#toppagelists').children()[pageNo]).siblings().attr({class:''});
                         }else{
-                            pageNo=text;              
+                            pageNo=text;  
+                            this.className='c';
+                            $(this).siblings().attr({class:''});            
                         }
                         console.log(this)
                         $.ajax({url:'../api/goodstype.php',
@@ -173,8 +181,12 @@ require(['jquery','common'],function($,com){
                             if(pageNo>Math.ceil(msg.total/msg.qty)){
                                 pageNo=1;
                             }
+                            $('#toppagelists').children()[pageNo].className='c';
+                            $($('#toppagelists').children()[pageNo]).siblings().attr({class:''});
                         }else{
-                            pageNo=text;              
+                            pageNo=text;
+                            this.className='c';
+                            $(this).siblings().attr({class:''});              
                         }
 
                         $.ajax({url:'../api/goodsprice.php',
@@ -210,8 +222,12 @@ require(['jquery','common'],function($,com){
                             if(pageNo>Math.ceil(msg.total/msg.qty)){
                                 pageNo=1;
                             }
+                            $('#toppagelists').children()[pageNo].className='c';
+                            $($('#toppagelists').children()[pageNo]).siblings().attr({class:''});
                         }else{
-                            pageNo=text;              
+                            pageNo=text;
+                            this.className='c';
+                            $(this).siblings().attr({class:''});              
                         }
 
                         $.ajax({url:'../api/search.php',

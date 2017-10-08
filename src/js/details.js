@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-26 20:42:56
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-29 20:56:01
+* @Last Modified time: 2017-10-08 16:33:58
 */
 // @配置
 require.config({
@@ -112,6 +112,7 @@ require(['jquery','common','xzoom'],function($,com){
         xZoom();
 
         // 点击加入购物车，用cookie写入
+        
         $('.addtocart_zuan').click(function(){
             var cookie = com.cookieGet('cargoods');
             var carlist=[];
@@ -143,7 +144,7 @@ require(['jquery','common','xzoom'],function($,com){
 
                 carlist.push(goods);
             }
-
+            $('#sitehead_cartnumber').text(carlist.length);
             var date = new Date();
             date.setDate(date.getDate()+1);
             document.cookie = 'cargoods=' + JSON.stringify(carlist) + ';expires=' + date.toString() + ';path=/';
